@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>343-ФЗ «Об аттракционах» — понятный разбор для индустрии развлечений</title>
+<meta name="description" content="Короткий практический разбор нового ФЗ № 343-ФЗ «Об аттракционах» (вступает в силу 01.03.2027): 4 ролевых режима, проверка объекта RB-1..RB-4, обратный калькулятор простоя 21 р.д., схемы, мифы и радар подзаконных актов. Автор — Константин Попов («Адвокат клиента»).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Новый 343-ФЗ «Об аттракционах» с 1 марта 2027: короткий разбор по 4 ролям">
+<meta property="og:description" content="Попадает ли ваш объект, что меняется по ст. 15, калькулятор простоя 21 р.д., 2 журнала, аттестация персонала, 3 причины запрета и радар подзаконных актов. Разбор Константина Попова («Адвокат клиента»).">
+<meta property="og:url" content="https://konstantinpopov89.github.io/343fz/">
+<meta property="og:image" content="https://konstantinpopov89.github.io/343fz/og-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161A20'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-size='13' font-weight='700' fill='%23FFF'%3E343%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){
+  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(114499063, "init", {
+  clickmap: true,
+  trackLinks: true,
+  accurateTrackBounce: true,
+  webvisor: true
+});
+</script>
+<!-- /Yandex.Metrika counter -->
+<style>
+:root {
+  --bg: #F9F7F2;
+  --surface: #FFFFFF;
+  --surface-alt: #F3EFE6;
+  --ink: #161A20;
+  --ink-2: #4B5563;
+  --ink-3: #6B7280;
+  --line: #E2DDD2;
+  --line-strong: #CBC3B3;
+  --teal: #0E6B5C;
+  --teal-bg: #E7F4F0;
+  --amber: #A65207;
+  --amber-bg: #FDF2DA;
+  --red: #B83025;
+  --red-bg: #FCECEB;
+  --blue: #1C4ED8;
+  --blue-bg: #EBF2FE;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 2px 10px rgba(22, 26, 32, 0.04);
+  --font-sans: "Golos Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  font-variant-numeric: tabular-nums;
+  overflow-x: hidden;
+}
+::selection { background: var(--blue-bg); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+a { color: var(--blue); text-underline-offset: 3px; }
+a:hover { color: #1237A3; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 18px; }
+
+/* Sticky top bar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(249, 247, 242, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-in {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.brand-text { display: flex; flex-direction: column; min-width: 0; }
+.brand-title { font-weight: 700; font-size: 14px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.brand-date { font-family: var(--font-mono); font-size: 11px; color: var(--ink-2); }
+.top-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.16s ease, border-color 0.16s ease, transform 0.12s ease;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--surface-alt); border-color: var(--ink-2); color: var(--ink); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+.btn-primary:hover { background: #2A313C; color: #FFFFFF; border-color: #2A313C; }
+.btn-teal { background: var(--teal); color: #FFFFFF; border-color: var(--teal); }
+.btn-teal:hover { background: #0B584B; color: #FFFFFF; }
+.btn-sm { font-size: 12.5px; padding: 6px 11px; }
+.hide-xs { display: inline-flex; }
+
+/* Hero */
+.hero { padding: 30px 0 22px; }
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 4.5vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  max-width: 24ch;
+  text-wrap: balance;
+}
+.hero-lead {
+  margin: 0 0 20px;
+  font-size: clamp(16px, 2vw, 18.5px);
+  color: var(--ink-2);
+  max-width: 68ch;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.stat-cell {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+.stat-cell.tone-red { background: var(--red-bg); border-color: #F2C8C5; }
+.stat-cell.tone-amber { background: var(--amber-bg); border-color: #F0D69A; }
+.stat-cell.tone-teal { background: var(--teal-bg); border-color: #BCE2D7; }
+.stat-cell.tone-blue { background: var(--blue-bg); border-color: #C7DBFC; }
+.stat-top { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+.stat-val { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
+.stat-lbl { margin: 0; font-size: 13px; line-height: 1.38; color: var(--ink-2); }
+.disclaimer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink-2);
+}
+.disclaimer-bar strong { color: var(--ink); }
+
+/* Section headers */
+section { padding: 28px 0; border-top: 1px solid var(--line); scroll-margin-top: 68px; }
+h2 {
+  margin: 0 0 8px;
+  font-size: clamp(21px, 3vw, 29px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.sec-sub { margin: 0 0 20px; color: var(--ink-2); max-width: 68ch; font-size: 15.5px; }
+h3 { margin: 0 0 6px; font-size: 17px; line-height: 1.3; letter-spacing: -0.01em; }
+
+.art-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+  background: rgba(22, 26, 32, 0.06);
+  padding: 2px 7px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.pill {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.pill-teal { background: var(--teal-bg); color: var(--teal); }
+.pill-amber { background: var(--amber-bg); color: var(--amber); }
+.pill-red { background: var(--red-bg); color: var(--red); }
+.pill-blue { background: var(--blue-bg); color: var(--blue); }
+
+.stat-cell, .rb-row, .role-panel, .ba-row, .myth-item, .radar-row, .verdict-box, .chk-item, .flow-wrap, .split-col, .calc-box { min-width: 0; max-width: 100%; }
+
+/* Unified RB Scale */
+.rb-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rb-row {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.rb-row.tone-teal { background: var(--teal-bg); border-color: #BCE2D7; }
+.rb-row.tone-blue { border-color: #C7DBFC; }
+.rb-row.tone-amber { border-color: #F0D69A; }
+.rb-row.tone-red { border-color: #F2C8C5; }
+.rb-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 8px; }
+.rb-code { font-family: var(--font-mono); font-weight: 700; font-size: 15px; }
+.rb-row.tone-teal .rb-code { color: var(--teal); }
+.rb-row.tone-blue .rb-code { color: var(--blue); }
+.rb-row.tone-amber .rb-code { color: var(--amber); }
+.rb-row.tone-red .rb-code { color: var(--red); }
+.rb-status { font-size: 11.5px; font-weight: 700; color: var(--ink-2); }
+.rb-meter {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(22, 26, 32, 0.08);
+  overflow: hidden;
+  margin-bottom: 9px;
+}
+.rb-meter span { display: block; height: 100%; border-radius: 999px; }
+.rb-row.tone-teal .rb-meter span { background: var(--teal); }
+.rb-row.tone-blue .rb-meter span { background: var(--blue); }
+.rb-row.tone-amber .rb-meter span { background: var(--amber); }
+.rb-row.tone-red .rb-meter span { background: var(--red); }
+.rb-params { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--ink); margin-bottom: 5px; display: flex; flex-wrap: wrap; gap: 2px 6px; }
+.rb-params span { white-space: nowrap; }
+.rb-params .dot { color: var(--ink-3); }
+.rb-conf { font-size: 12.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+.rb-doc { font-size: 11.5px; font-family: var(--font-mono); color: var(--ink-2); margin-bottom: 7px; }
+.rb-ex { margin: 0; font-size: 12.5px; line-height: 1.4; color: var(--ink-2); }
+.rb-footnote {
+  margin: 0 0 18px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+}
+
+/* Responsive HTML/CSS Flow Diagrams */
+.flow-wrap {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.flow-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.flow-grid {
+  display: grid;
+  grid-template-columns: 1fr 22px 1fr 22px 1fr 22px 1fr;
+  align-items: stretch;
+  gap: 6px;
+}
+.flow-grid.no-arrows {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.flow-step {
+  border-radius: 10px;
+  padding: 11px 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.flow-step.tone-blue { background: var(--blue-bg); border-color: #B9D1FA; }
+.flow-step.tone-amber { background: var(--amber-bg); border-color: #EBD08C; }
+.flow-step.tone-red { background: var(--red-bg); border-color: #EBB8B4; }
+.flow-step.tone-teal { background: var(--teal-bg); border-color: #B2DDD0; }
+.flow-step.tone-dark { background: var(--ink); border-color: var(--ink); color: #FFFFFF; }
+.flow-head {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.flow-step.tone-blue .flow-head { color: var(--blue); }
+.flow-step.tone-amber .flow-head { color: var(--amber); }
+.flow-step.tone-red .flow-head { color: var(--red); }
+.flow-step.tone-teal .flow-head { color: var(--teal); }
+.flow-step.tone-dark .flow-head { color: #FFFFFF; }
+.flow-body { font-size: 12.5px; line-height: 1.38; color: var(--ink); }
+.flow-step.tone-dark .flow-body { color: #E5E7EB; }
+.flow-arrow {
+  display: grid;
+  place-items: center;
+  color: var(--ink-2);
+}
+.flow-arrow svg { width: 18px; height: 18px; display: block; }
+.flow-cap { margin: 10px 0 0; font-size: 12px; color: var(--ink-3); }
+
+/* Interactive Checker */
+.checker {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.checker-steps { display: grid; gap: 16px; }
+.q-group label.q-title { display: block; font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.choice-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice-btn {
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.14s ease;
+}
+.choice-btn:hover { border-color: var(--ink); background: var(--surface); }
+.choice-btn.is-selected { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+
+.verdict-box {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+}
+.verdict-box.tone-red { background: var(--red-bg); border-color: #EAB8B4; }
+.verdict-box.tone-amber { background: var(--amber-bg); border-color: #ECD08B; }
+.verdict-box.tone-blue { background: var(--blue-bg); border-color: #BDD3FB; }
+.verdict-box.tone-teal { background: var(--teal-bg); border-color: #B4DDD0; }
+.verdict-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.verdict-title { font-size: 18px; font-weight: 700; margin: 0; }
+.verdict-list { margin: 10px 0 14px; padding-left: 18px; }
+.verdict-list li { margin-bottom: 5px; font-size: 14.5px; }
+.verdict-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.verdict-note { margin: 0; font-size: 12px; color: var(--ink-2); }
+
+/* Role workspace */
+.role-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.role-tab {
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all 0.15s ease;
+}
+.role-tab:hover { border-color: var(--ink); }
+.role-tab.is-active { background: var(--ink); color: #FFFFFF; border-color: var(--ink); }
+.role-tab-title { font-weight: 700; font-size: 14.5px; line-height: 1.25; }
+.role-tab-sub { font-size: 12px; color: var(--ink-2); }
+.role-tab.is-active .role-tab-sub { color: rgba(255, 255, 255, 0.78); }
+
+.role-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.role-summary {
+  font-size: 16.5px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  max-width: 74ch;
+}
+.theses-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 24px; margin-bottom: 22px; }
+.thesis-item h3 { font-size: 16px; margin-bottom: 5px; }
+.thesis-item p { margin: 0 0 8px; font-size: 14.5px; color: var(--ink-2); }
+.tags-row { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.subhead-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 22px 0 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.subhead {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+.examples-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.example-box {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+}
+.example-box h4 { margin: 0 0 6px; font-size: 14.5px; }
+.example-box p { margin: 0 0 6px; font-size: 13.5px; color: var(--ink-2); }
+.example-box p:last-child { margin-bottom: 0; color: var(--ink); }
+
+/* Reverse Downtime Calculator (st. 15) */
+.calc-box {
+  background: var(--amber-bg);
+  border: 1px solid #EBD08C;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-top: 18px;
+}
+.calc-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.calc-head h4 { margin: 0; font-size: 15.5px; }
+.calc-controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin-bottom: 12px; }
+.calc-field { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; }
+.calc-field input[type="date"] {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  padding: 6px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.calc-toggle { display: flex; align-items: center; gap: 7px; font-size: 13.5px; cursor: pointer; }
+.calc-toggle input { width: 16px; height: 16px; accent-color: var(--amber); }
+.calc-out {
+  background: var(--surface);
+  border: 1px solid #EBD08C;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.calc-date-big { font-family: var(--font-mono); font-size: 17px; font-weight: 700; color: var(--red); }
+.calc-meta { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+.calc-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-2); }
+
+.checklist { display: grid; gap: 8px; }
+.chk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 14px;
+}
+.chk-item input { margin-top: 3px; width: 17px; height: 17px; accent-color: var(--teal); flex-shrink: 0; }
+.chk-item.is-done { opacity: 0.65; text-decoration: line-through; }
+.chk-text { flex: 1; }
+
+details.articles-drawer {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  background: var(--bg);
+}
+details.articles-drawer summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details.articles-drawer summary::-webkit-details-marker { display: none; }
+.art-list { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.art-list li { display: flex; gap: 10px; align-items: baseline; font-size: 13.5px; color: var(--ink-2); }
+
+/* Before / After */
+.ba-table { display: grid; gap: 10px; }
+.ba-row {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1.25fr;
+  gap: 14px;
+  align-items: start;
+}
+.ba-topic strong { display: block; font-size: 15px; margin-bottom: 6px; }
+.ba-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.impact-pill { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 999px; }
+.impact-high { background: var(--red-bg); color: var(--red); }
+.impact-medium { background: var(--amber-bg); color: var(--amber); }
+.impact-low { background: var(--teal-bg); color: var(--teal); }
+.ba-col .col-label { display: block; font-size: 11.5px; font-weight: 700; color: var(--ink-3); margin-bottom: 4px; }
+.ba-col p { margin: 0; font-size: 13.5px; line-height: 1.45; }
+.ba-before p { color: var(--ink-2); }
+.ba-after p { color: var(--ink); font-weight: 500; }
+
+/* Decision split: Own full check vs Accredited inspection */
+.split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+.split-col {
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.split-col.tone-teal { background: var(--teal-bg); border-color: #B4DDD0; }
+.split-col.tone-red { background: var(--red-bg); border-color: #EAB8B4; }
+.split-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.split-col ul { margin: 8px 0 0; padding-left: 18px; }
+.split-col li { margin-bottom: 5px; font-size: 14px; color: var(--ink); }
+
+/* Ban triggers */
+.ban-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 14px; }
+.ban-step {
+  background: var(--surface);
+  border: 1px solid #EBC4C0;
+  border-radius: var(--radius);
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.ban-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--red);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.ban-body p { margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); }
+.ban-conseq {
+  background: var(--red-bg);
+  border: 1px solid #EBC4C0;
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+/* Myths & good news */
+.myths-grid { display: grid; gap: 10px; margin-bottom: 18px; }
+.myth-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 14px;
+  align-items: start;
+}
+.myth-q p { margin: 6px 0 0; font-weight: 600; font-size: 14.5px; color: var(--ink); }
+.myth-a p { margin: 6px 0 8px; font-size: 14px; color: var(--ink-2); }
+.good-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.good-item {
+  background: var(--teal-bg);
+  border: 1px solid #B5DFD2;
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.good-head { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; margin-bottom: 6px; }
+.good-item p { margin: 0; font-size: 14px; color: var(--ink); }
+
+/* Radar + CTA */
+.radar-wrap { display: grid; grid-template-columns: 1.45fr 1fr; gap: 16px; align-items: start; }
+.radar-list { display: grid; gap: 10px; }
+.radar-row {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.radar-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.radar-row p { margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); }
+
+.channel-cta {
+  background: var(--ink);
+  color: #FFFFFF;
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.channel-cta h3 { color: #FFFFFF; font-size: 19px; margin: 0; }
+.channel-cta p { color: rgba(255, 255, 255, 0.84); margin: 0; font-size: 14px; line-height: 1.5; }
+.cta-qr-row { display: flex; align-items: center; gap: 14px; }
+.qr-frame {
+  width: 112px;
+  height: 112px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 6px;
+  flex-shrink: 0;
+}
+.qr-frame .qr-svg { width: 100%; height: 100%; display: block; }
+.cta-meta { font-size: 13px; color: rgba(255, 255, 255, 0.86); }
+.cta-meta strong { color: #FFFFFF; display: block; font-size: 15px; margin-bottom: 3px; }
+.cta-meta a { color: #93C5FD; font-family: var(--font-mono); font-size: 13px; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 26px 0 44px;
+  background: var(--surface-alt);
+  margin-top: 16px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr auto;
+  gap: 20px;
+  align-items: center;
+}
+.footer-grid h3 { font-size: 15px; margin-bottom: 6px; }
+.footer-grid p, .footer-grid li { font-size: 13px; color: var(--ink-2); margin: 0 0 5px; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-qr { width: 96px; height: 96px; background: #FFFFFF; border: 1px solid var(--line); border-radius: 10px; padding: 5px; }
+.footer-qr .qr-svg { width: 100%; height: 100%; display: block; }
+
+/* Responsive 375px mobile-first tuning */
+@media (max-width: 860px) {
+  .stats-grid, .rb-grid, .role-tabs { grid-template-columns: repeat(2, 1fr); }
+  .theses-list, .examples-grid, .good-grid, .radar-wrap, .footer-grid, .split-grid { grid-template-columns: 1fr; }
+  .ba-row, .myth-item, .ban-grid { grid-template-columns: 1fr; }
+  .flow-grid, .flow-grid.no-arrows { grid-template-columns: 1fr; gap: 6px; }
+  .flow-arrow { transform: rotate(90deg); height: 20px; }
+}
+@media (max-width: 520px) {
+  .wrap { padding: 0 14px; }
+  .topbar-in { padding: 9px 14px; }
+  .hide-xs { display: none; }
+  .stats-grid, .rb-grid { grid-template-columns: 1fr; }
+  .role-tabs { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .role-tab { padding: 10px; }
+  .role-tab-title { font-size: 13.5px; }
+  .role-panel { padding: 15px; }
+  .checker { padding: 14px; }
+  .cta-qr-row { flex-direction: row; align-items: center; }
+  .qr-frame { width: 96px; height: 96px; }
+}
+
+/* Clean print / Save as PDF mode */
+@media print {
+  body { background: #FFFFFF; font-size: 10.5pt; }
+  .topbar, #checkerApp, .calc-controls, .chk-copy-btn, .btn { display: none !important; }
+  section { padding: 10pt 0; }
+  .stat-cell, .rb-row, .thesis-item, .example-box, .flow-step, .ba-row, .myth-item, .radar-row, .split-col, footer { box-shadow: none; break-inside: avoid; }
+  .role-panel { border: none; padding: 0; }
+  .channel-cta { background: #FFFFFF; color: #161A20; border: 1px solid #161A20; break-inside: avoid; }
+  .channel-cta h3, .channel-cta p, .cta-meta, .cta-meta strong, .cta-meta a { color: #161A20; }
+  .qr-frame { border: 1px solid #161A20; }
+  details.articles-drawer { display: block; break-inside: avoid; }
+  a[href^="http"]:not(.no-print-url)::after { content: " (" attr(href) ")"; font-size: 8.5pt; color: #4B5563; }
+}
+</style>
+</head>
+<body>
+<noscript><div><img src="https://mc.yandex.ru/watch/114499063" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">343</span>
+      <span class="brand-text">
+        <span class="brand-title">343-ФЗ «Об аттракционах»</span>
+        <span class="brand-date">Актуально на 22.11.2026</span>
+      </span>
+    </a>
+    <div class="top-actions">
+      <a class="btn btn-sm hide-xs" href="#checker">Проверить объект</a>
+      <button type="button" class="btn btn-sm hide-xs" id="printPdfBtn">Печать / PDF</button>
+      <a class="btn btn-sm btn-primary" href="https://t.me/advokatklienta" target="_blank" rel="noopener" data-goal="click_channel">Адвокат клиента</a>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <h1>Новый закон об аттракционах 343-ФЗ: что меняется с 1 марта 2027 года</h1>
+    <p class="hero-lead">Впервые в России принят единый федеральный закон об эксплуатации аттракционов. Он сохраняет базу ТР ЕАЭС 038/2016 (включая ежегодное освидетельствование), но добавляет жёсткие нормы: обязательную проверку при каждом переезде, простой до 21 рабочего дня, прямой запрет условных актов и единые требования к двум журналам и обучению персонала.</p>
+    <div class="stats-grid">
+      <div class="stat-cell tone-blue"><div class="stat-top"><span class="stat-val">01.03.2027</span><span class="art-tag">ст. 20</span></div><p class="stat-lbl">Единый федеральный закон вступает в силу по всей РФ</p></div><div class="stat-cell tone-red"><div class="stat-top"><span class="stat-val">Каждый переезд</span><span class="art-tag">ст. 15 ч. 1</span></div><p class="stat-lbl">Новое освидетельствование при смене места + раз в 12 мес. на все RB-1..RB-3</p></div><div class="stat-cell tone-amber"><div class="stat-top"><span class="stat-val">до 21 раб. дня</span><span class="art-tag">ст. 15 ч. 2–5</span></div><p class="stat-lbl">Запрет работы на время проверки, условные акты вне закона</p></div><div class="stat-cell tone-teal"><div class="stat-top"><span class="stat-val">2 журнала + кадры</span><span class="art-tag">ст. 14 ч. 4, ст. 17</span></div><p class="stat-lbl">Единые требования к журналам и аттестация операторов (можно самим)</p></div>
+    </div>
+    <div class="disclaimer-bar">
+      <span><strong>Автор разбора:</strong> Константин Попов · Telegram-канал <a href="https://t.me/advokatklienta" target="_blank" rel="noopener" data-goal="click_channel">«Адвокат клиента»</a></span>
+      <span>Справочный разбор по официальным текстам 343-ФЗ, ТР ЕАЭС 038/2016, ПП РФ № 1939 и № 1732 (актуально на 22.11.2026). Не является юридической консультацией.</span>
+    </div>
+  </div>
+
+  <!-- SECTION 1: APPLICABILITY + UNIFIED RB SCALE -->
+  <section id="checker">
+    <h2>Попадает ли ваш объект под 343-ФЗ?</h2>
+    <p class="sec-sub">Закон действует при двух условиях сразу: вид аттракциона входит в Приложение 1 ТР ЕАЭС 038/2016 и его степень биомеханического риска — RB-1, RB-2 или RB-3 (Приложение 2). Берётся максимальный показатель по высоте, скорости или углу наклона кресел.</p>
+
+    <div class="rb-grid">
+      <div class="rb-row tone-teal"><div class="rb-head"><span class="rb-code">RB-4</span><span class="rb-status">Вне 343-ФЗ</span></div><div class="rb-meter" aria-hidden="true"><span style="width:12%"></span></div><div class="rb-params"><span>H ≤ 0,4 м</span><span class="dot">·</span><span>V ≤ 3 м/с</span></div><div class="rb-conf">Не подпадает под 343-ФЗ</div><div class="rb-doc">Паспорт изготовителя (подтверждение RB-4)</div><p class="rb-ex">Малышковый батут с игровой поверхностью ≤ 40 см, медленная мини-карусель до 40 см и до 3 м/с</p></div><div class="rb-row tone-blue"><div class="rb-head"><span class="rb-code">RB-3</span><span class="rb-status">Под 343-ФЗ</span></div><div class="rb-meter" aria-hidden="true"><span style="width:38%"></span></div><div class="rb-params"><span>0,4 &lt; H ≤ 2 м</span><span class="dot">·</span><span>3 &lt; V ≤ 10 м/с</span></div><div class="rb-conf">Декларация + регистрация</div><div class="rb-doc">Паспорт аттракциона (Прил. 6 ТР ЕАЭС)</div><p class="rb-ex">Небольшие карусели, надувные батуты и горки до 2 м, водные горки до 2 м, автодром, парковый поезд</p></div><div class="rb-row tone-amber"><div class="rb-head"><span class="rb-code">RB-2</span><span class="rb-status">Под 343-ФЗ</span></div><div class="rb-meter" aria-hidden="true"><span style="width:70%"></span></div><div class="rb-params"><span>2 &lt; H ≤ 8 м</span><span class="dot">·</span><span>10 &lt; V ≤ 20 м/с</span></div><div class="rb-conf">Декларация + регистрация</div><div class="rb-doc">Формуляр (Прил. 5 ТР ЕАЭС)</div><p class="rb-ex">Семейные горки, большие надувные и водные горки 3–7 м, цепочные карусели средней высоты, качели</p></div><div class="rb-row tone-red"><div class="rb-head"><span class="rb-code">RB-1</span><span class="rb-status">Под 343-ФЗ</span></div><div class="rb-meter" aria-hidden="true"><span style="width:100%"></span></div><div class="rb-params"><span>H &gt; 8 м</span><span class="dot">·</span><span>V &gt; 20 м/с</span></div><div class="rb-conf">Сертификат + регистрация</div><div class="rb-doc">Формуляр (Прил. 5 ТР ЕАЭС)</div><p class="rb-ex">Колесо обозрения, экстремальные горки, башня падения, кресла с наклоном на высоте H ≥ 3 м</p></div>
+    </div>
+    <p class="rb-footnote"><strong>Важно про наклон кресел (Прил. 2 ТР ЕАЭС 038/2016):</strong> для симуляторов, 5D и аттракционов с наклоном кресел действуют отдельные пороги — наклон вперёд (&gt; 10° / 45° / 135°), назад (&gt; 95° / 105° / 135°), набок (&gt; 30° / 60° / ≥ 120°), а высота подъёма в наклонном кресле <strong>H ≥ 3 м уже относится к RB-1</strong>. Вне 343-ФЗ: виды вне Прил. 1 (тиры, верёвочные парки, скалодромы), детские площадки, канатные дороги-ОПО, спорт и личное оборудование (ч. 2 ст. 2).</p>
+
+    <div class="checker" id="checkerApp">
+      <div class="checker-steps">
+        <div class="q-group">
+          <label class="q-title">1. Что это за оборудование?</label>
+          <div class="choice-grid" data-q="kind">
+            <button type="button" class="choice-btn is-selected" data-val="in_list">Карусель, горка, колесо, водная горка, автодром, картинг, батут, симулятор (Прил. 1 ТР ЕАЭС)</button>
+            <button type="button" class="choice-btn" data-val="outside_list">Тир, силомер, лазертаг, верёвочный парк, скалодром (нет в Прил. 1)</button>
+            <button type="button" class="choice-btn" data-val="playground">Детская игровая площадка / спортивный тренажёр</button>
+            <button type="button" class="choice-btn" data-val="opo_personal">Канатная дорога-ОПО или личное/семейное оборудование</button>
+          </div>
+        </div>
+        <div class="q-group" id="qRiskGroup">
+          <label class="q-title">2. Максимальная высота подъёма/спуска (H) или скорость (V)?</label>
+          <div class="choice-grid" data-q="risk">
+            <button type="button" class="choice-btn" data-val="rb4">H ≤ 0,4 м и V ≤ 3 м/с (RB-4)</button>
+            <button type="button" class="choice-btn" data-val="rb3">0,4 &lt; H ≤ 2 м или 3 &lt; V ≤ 10 м/с (RB-3)</button>
+            <button type="button" class="choice-btn is-selected" data-val="rb2">2 &lt; H ≤ 8 м или 10 &lt; V ≤ 20 м/с (RB-2)</button>
+            <button type="button" class="choice-btn" data-val="rb1">H &gt; 8 м или V &gt; 20 м/с (RB-1)</button>
+          </div>
+        </div>
+        <div class="q-group" id="qTiltGroup">
+          <label class="q-title">2б. Есть ли наклон пассажирских кресел (симуляторы, 5D, перевороты)?</label>
+          <div class="choice-grid" data-q="tilt">
+            <button type="button" class="choice-btn is-selected" data-val="none">Нет / в пределах нормы (вперёд ≤ 10°, назад ≤ 95°, набок ≤ 30°)</button>
+            <button type="button" class="choice-btn" data-val="rb3">Умеренный наклон (вперёд 10°–45°, назад 95°–105°, набок 30°–60°)</button>
+            <button type="button" class="choice-btn" data-val="rb2">Сильный наклон (вперёд 45°–135°, назад 105°–135°, набок 60°–120° при H &lt; 3 м)</button>
+            <button type="button" class="choice-btn" data-val="rb1">Переворот (&gt; 135° / ≥ 120° набок) или наклон кресла на H ≥ 3 м</button>
+          </div>
+        </div>
+        <div class="q-group" id="qModeGroup">
+          <label class="q-title">3. Как используется объект?</label>
+          <div class="choice-grid" data-q="usage">
+            <button type="button" class="choice-btn is-selected" data-val="park">Стационарный парк</button>
+            <button type="button" class="choice-btn" data-val="mobile">Перевозимый / мобильный (переезды на площадки)</button>
+            <button type="button" class="choice-btn" data-val="vendor">Производство, поставка или подрядное ТО/ремонт</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="verdict-box tone-amber" id="verdictBox" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 4 FULL ROLE MODES -->
+  <section id="roles">
+    <h2>Разбор по 4 ролям: выберите свою</h2>
+    <p class="sec-sub">Каждая роль собрана как самостоятельная рабочая инструкция — с примерами, адаптивной схемой, чек-листом до 01.03.2027 и точными ссылками на статьи. Выбор сохраняется в ссылке страницы.</p>
+
+    <div class="role-tabs" role="tablist" aria-label="Выбор роли">
+      <button type="button" class="role-tab is-active" role="tab" aria-selected="true" data-role="park"><span class="role-tab-title">Стационарный парк</span><span class="role-tab-sub">Владелец или директор</span></button><button type="button" class="role-tab" role="tab" aria-selected="false" data-role="mobile"><span class="role-tab-title">Мобильные и батуты</span><span class="role-tab-sub">Владелец или ИП с переездами</span></button><button type="button" class="role-tab" role="tab" aria-selected="false" data-role="tech"><span class="role-tab-title">Техдиректор / инженер / юрист</span><span class="role-tab-sub">Эксплуатация, документы и надзор</span></button><button type="button" class="role-tab" role="tab" aria-selected="false" data-role="vendor"><span class="role-tab-title">Поставщик и подрядчик ТО</span><span class="role-tab-sub">Производитель, монтажник, сервис</span></button>
+    </div>
+
+    <div class="role-panel" id="rolePanel" role="tabpanel"></div>
+  </section>
+
+  <!-- SECTION 3: BEFORE / AFTER + DECISION SPLIT + CALCULATOR -->
+  <section id="changes">
+    <h2>Было / Стало с 1 марта 2027 года</h2>
+    <p class="sec-sub">343-ФЗ не отменяет ТР ЕАЭС 038/2016 и правила регистрации, но переводит ключевые обязанности эксплуатанта на уровень федерального закона и закрывает серые зоны.</p>
+    <div class="ba-table">
+      <div class="ba-row"><div class="ba-topic"><strong>Аккредитованное освидетельствование и переезды</strong><div class="ba-meta"><span class="art-tag">ст. 15 ч. 1</span><span class="impact-pill impact-high">Критично</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>Ежегодное освидетельствование уже требовалось по п. 130 ТР ЕАЭС 038/2016 (и ПП № 1939 приостанавливало регистрацию без акта), но переезды и единый режим для всех машин в одном ФЗ не были жёстко закреплены</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>На уровне ФЗ сведены все RB-1..RB-3 (и до, и после 18.04.2018) + добавлено обязательное освидетельствование при КАЖДОМ изменении места установки, после разрушения критичных узлов и капремонта</p></div></div><div class="ba-row"><div class="ba-topic"><strong>Простой, срок 21 рабочий день и запрет условных актов</strong><div class="ba-meta"><span class="art-tag">ст. 15 ч. 2–5, ст. 16 ч. 5–7</span><span class="impact-pill impact-high">Критично</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>На практике нередко встречались акты «с оговоркой об устранении замечаний» и размытые сроки проведения оценки</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>Прямой запрет работы на время проверки, предельный срок до 21 рабочего дня и прямой запрет условных актов/заключений «при условии устранения замечаний»</p></div></div><div class="ba-row"><div class="ba-topic"><strong>Учётные журналы на аттракционе</strong><div class="ba-meta"><span class="art-tag">ст. 14 ч. 4</span><span class="impact-pill impact-medium">Важно</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>Утверждённые формы обоих журналов (Прил. 1 — допуск, Прил. 2 — ТОиР) в ПП РФ № 1732 действовали только для аттракционов, введённых до 18.04.2018; для новых машин единых форм РФ не было</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>На уровне ФЗ закреплены 2 обязательных журнала (ежедневного допуска и ТОиР) по единым федеральным требованиям для ВСЕХ аттракционов (федеральный акт ждём)</p></div></div><div class="ba-row"><div class="ba-topic"><strong>Обучение и аттестация операторов</strong><div class="ba-meta"><span class="art-tag">ст. 17 ч. 1–4</span><span class="impact-pill impact-medium">Важно</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>Регулировалось стандартами, ПП № 1732 (для машин до 2018 г.) и инструкциями изготовителей; в ТР ЕАЭС 038/2016 напрямую не входило</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>Прямая обязанность обучать (вкл. нештатные ситуации и доступ инвалидов) и аттестовать с отметкой в журнале допуска — но можно проводить самим, если документация не требует иного</p></div></div><div class="ba-row"><div class="ba-topic"><strong>Запрет эксплуатации и физическое перекрытие доступа</strong><div class="ba-meta"><span class="art-tag">ст. 18 ч. 2, 7–9</span><span class="impact-pill impact-high">Критично</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>Механизмы остановки были разнесены по правилам регистрации (ПП № 1939), региональным актам и общим нормам надзора</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>3 чётких основания запрета в ФЗ по итогам КНМ (248-ФЗ) + прямая обязанность физически преградить несанкционированный доступ людей</p></div></div><div class="ba-row"><div class="ba-topic"><strong>Сфера действия, регистрация и региональные правила</strong><div class="ba-meta"><span class="art-tag">ст. 2, ст. 4, ст. 9–11</span><span class="impact-pill impact-low">База сохранена</span></div></div><div class="ba-col ba-before"><span class="col-label">Было (до 01.03.2027)</span><p>ТР ЕАЭС 038/2016 (RB-1..RB-3), регистрация в Гостехнадзоре (ПП № 1939), региональные акты</p></div><div class="ba-col ba-after"><span class="col-label">Стало по 343-ФЗ</span><p>Базовый каркас сохранён: те же RB-1..RB-3, эксплуатант только ЮЛ/ИП, электронная запись в РИС; региональные акты не отменены</p></div></div>
+    </div>
+
+    <div class="split-grid" aria-label="Разница между своей полной проверкой и аккредитованным освидетельствованием">
+      <div class="split-col tone-teal">
+        <div class="split-top">
+          <h3>Своя полная проверка (силами парка)</h3>
+          <span class="art-tag">ст. 14 ч. 7</span>
+        </div>
+        <p style="margin:0; font-size:13.5px; color:var(--ink-2);">Делает сам эксплуатант по руководству, без вызова аккредитованной лаборатории и без 21-дневного акта:</p>
+        <ul>
+          <li>После простоя аттракциона более 12 месяцев (консервация).</li>
+          <li>После простоя аттракциона по техническим причинам.</li>
+          <li>После частичной или полной разборки (при каждом монтаже).</li>
+        </ul>
+      </div>
+      <div class="split-col tone-red">
+        <div class="split-top">
+          <h3>Аккредитованная лаборатория + простой</h3>
+          <span class="art-tag">ст. 15–16</span>
+        </div>
+        <p style="margin:0; font-size:13.5px; color:var(--ink-2);">Обязательна остановка работы (до 21 раб. дня) и чистый акт без оговорок:</p>
+        <ul>
+          <li>Не реже 1 раза в 12 месяцев на каждый RB-1..RB-3 (и до, и после 2018 г.).</li>
+          <li>При каждом изменении места установки или нахождения (переезд).</li>
+          <li>После разрушения критичных узлов (Прил. 5), капремонта/модификации и при продлении ресурса (ст. 16).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="calc-box" id="downtimeCalc">
+      <div class="calc-head">
+        <h4>Обратный калькулятор простоя к открытию или запуску после капремонта (ст. 15 ч. 2–5)</h4>
+        <span class="art-tag">предельный срок 21 раб. день</span>
+      </div>
+      <div class="calc-controls">
+        <label class="calc-field">Целевая дата открытия: <input type="date" id="openDateInput" value="2027-05-01" min="2027-03-01" max="2029-12-31"></label>
+        <label class="calc-toggle"><input type="checkbox" id="repairBufChk" checked> +10 раб. дней буфера на ремонт (условных актов нет)</label>
+      </div>
+      <div class="calc-out">
+        <div>
+          <div class="calc-date-big" id="calcStartDate">—</div>
+          <div class="calc-meta" id="calcMetaText"></div>
+        </div>
+        <button type="button" class="btn btn-sm" id="copyCalcBtn">Скопировать график инженеру</button>
+      </div>
+      <p class="calc-note">Учтены выходные и нерабочие праздничные дни по ст. 112 ТК РФ (без индивидуальных переносов постановления Правительства на конкретный год). 21 рабочий день — максимальный срок оформления акта по ст. 15 ч. 3.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: BAN TRIGGERS -->
+  <section id="bans">
+    <h2>Три основания запрета эксплуатации и ответственность</h2>
+    <p class="sec-sub">Региональный контроль (Гостехнадзор) работает по 248-ФЗ (ст. 18 ч. 2). При любом из трёх нарушений по итогам контрольного мероприятия выносится решение о запрете эксплуатации.</p>
+
+    <div class="ban-grid">
+      <div class="ban-step"><div class="ban-num">1</div><div class="ban-body"><h3>Нет освидетельствования</h3><p>Не пройдена оценка техсостояния в срок (раз в 12 мес., после переезда, разрушения критичных узлов, капремонта или модификации).</p><span class="art-tag">ст. 18 ч. 7 п. 1 → ст. 15</span></div></div><div class="ban-step"><div class="ban-num">2</div><div class="ban-body"><h3>Проблема с регистрацией</h3><p>Государственная или временная регистрация отсутствует, приостановлена либо прекращена в РИС.</p><span class="art-tag">ст. 18 ч. 7 п. 2 → ст. 9</span></div></div><div class="ban-step"><div class="ban-num">3</div><div class="ban-body"><h3>Истёк срок или ресурс</h3><p>Закончился назначенный срок службы/ресурс от изготовителя либо срок продления (+1 год) без нового обследования.</p><span class="art-tag">ст. 18 ч. 7 п. 3 → ст. 16</span></div></div>
+    </div>
+    <div class="ban-conseq">
+      <strong>Что обязан сделать эксплуатант при запрете (ст. 18 ч. 9):</strong> немедленно прекратить работу и принять меры, препятствующие несанкционированному доступу людей к аттракциону (ограждение, отключение питания, блокировка прохода). За нарушение требований 343-ФЗ предусмотрена административная (в т.ч. ст. 14.43 КоАП РФ), уголовная (в т.ч. ст. 238 УК РФ при угрозе/вреде жизни и здоровью) и иная ответственность <span class="art-tag">ст. 19</span>.
+    </div>
+  </section>
+
+  <!-- SECTION 5: MYTHS & GOOD NEWS -->
+  <section id="myths">
+    <h2>5 дорогих мифов о 343-ФЗ и 2 хорошие новости</h2>
+    <p class="sec-sub">Вокруг закона уже разошлись неточные пересказы. Ниже — что реально написано в тексте 343-ФЗ и на чём можно законно сэкономить время и бюджет.</p>
+    <div class="myths-grid">
+      <article class="myth-item"><div class="myth-q"><span class="pill pill-red">Миф</span><p>«Аттракцион куплен до 2018 года — ТР ЕАЭС к нему не относится, 343-ФЗ его не касается»</p></div><div class="myth-a"><span class="pill pill-teal">По закону</span><p>Касается напрямую. «Дорегламентные» аттракционы прямо включены в ежегодное освидетельствование и в предмет регионального контроля.</p><span class="art-tag">ст. 15 ч. 1 п. 1, ст. 18 ч. 3 п. 3</span></div></article><article class="myth-item"><div class="myth-q"><span class="pill pill-red">Миф</span><p>«Попросим лабораторию выдать акт с замечаниями — откроемся на майские и доделаем потом»</p></div><div class="myth-a"><span class="pill pill-teal">По закону</span><p>Прямой запрет закона. Акт и заключение обязаны однозначно разрешать или запрещать работу; формулировка «при условии устранения замечаний» не допускается.</p><span class="art-tag">ст. 15 ч. 4–5, ст. 16 ч. 6–7</span></div></article><article class="myth-item"><div class="myth-q"><span class="pill pill-red">Миф</span><p>«Мобильный батут проверил раз в год — можно возить по праздникам, хоть на самозанятого»</p></div><div class="myth-a"><span class="pill pill-teal">По закону</span><p>Две ошибки сразу: эксплуатантом может быть только ЮЛ или ИП, а освидетельствование требуется при каждом изменении места установки (кроме RB-4 ≤ 0,4 м).</p><span class="art-tag">ст. 9 ч. 6, ст. 15 ч. 1</span></div></article><article class="myth-item"><div class="myth-q"><span class="pill pill-red">Миф</span><p>«Истёк назначенный срок службы 7 лет — аттракцион пора резать на металлолом»</p></div><div class="myth-a"><span class="pill pill-teal">По закону</span><p>Нет. При исправном состоянии аккредитованная организация проводит оценку остаточного ресурса и продлевает срок эксплуатации (до +1 года каждый раз).</p><span class="art-tag">ст. 16 ч. 1, 4</span></div></article><article class="myth-item"><div class="myth-q"><span class="pill pill-red">Миф</span><p>«Федеральный закон полностью отменил местные правила регионов»</p></div><div class="myth-a"><span class="pill pill-teal">По закону</span><p>Нет. Закон прямо включает законы и НПА субъектов РФ в правовую базу; положение о госконтроле и порядок работы РИС утверждает каждый регион.</p><span class="art-tag">ст. 4, ст. 8 ч. 2</span></div></article>
+    </div>
+    <div class="good-grid">
+      <article class="good-item"><div class="good-head"><h3>Обучать и аттестовать операторов можно своими силами</h3><span class="art-tag">ст. 17 ч. 1–4</span></div><p>Эксплуатант сам выбирает формы, методы, место и сроки обучения и вправе сам проводить аттестацию — с записью в журнале ежедневного допуска. Оговорка ч. 1 ст. 17: если эксплуатационная документация аттракциона задаёт специальные требования к квалификации, их необходимо соблюсти.</p></article><article class="good-item"><div class="good-head"><h3>Оценку остаточного ресурса можно совместить с ежегодным освидетельствованием</h3><span class="art-tag">ст. 16 ч. 3</span></div><p>Если срок службы подходит к концу, не нужно останавливать аттракцион дважды на 21 рабочий день: обследование по ст. 16 разрешено провести внутри ежегодного освидетельствования по ст. 15.</p></article>
+    </div>
+  </section>
+
+  <!-- SECTION 6: RADAR OF PENDING BYLAWS + CHANNEL CTA -->
+  <section id="radar">
+    <h2>Радар непринятых подзаконных актов к 01.03.2027</h2>
+    <p class="sec-sub">На 22.11.2026 (проверено по официальному порталу publication.pravo.gov.ru и КонсультантПлюс) три ключевых документа под 343-ФЗ ещё не опубликованы. Мы намеренно не выдумываем их формы и процедуры.</p>
+
+    <div class="radar-wrap">
+      <div class="radar-list">
+        <div class="radar-row"><div class="radar-top"><h3>Единые требования и порядок ведения 2 обязательных журналов</h3><span class="pill pill-amber">Ждём федеральный акт</span></div><p>На 22.11.2026 не опубликован (проверено по publication.pravo.gov.ru и КонсультантПлюс). Пока утверждённые формы обоих журналов (Прил. 1 — допуск, Прил. 2 — ТОиР) из ПП РФ № 1732 действуют только для аттракционов, введённых до 18.04.2018.</p><span class="art-tag">ст. 14 ч. 4 343-ФЗ</span></div><div class="radar-row"><div class="radar-top"><h3>Обновлённые Правила государственной регистрации аттракционов</h3><span class="pill pill-amber">Ждём постановление Правительства РФ</span></div><p>На 22.11.2026 действует ПП РФ от 30.12.2019 № 1939 в редакции от 10.07.2025; редакция под 343-ФЗ ещё не опубликована.</p><span class="art-tag">ст. 5 п. 5, 7; ст. 9 ч. 4 343-ФЗ</span></div><div class="radar-row"><div class="radar-top"><h3>Общие требования к госконтролю и обновлённые региональные положения</h3><span class="pill pill-amber">Ждём акт Правительства РФ и акты субъектов РФ</span></div><p>На 22.11.2026 федеральных актов под 343-ФЗ в реестре publication.pravo.gov.ru не опубликовано; регионы обновляют положения к 01.03.2027.</p><span class="art-tag">ст. 18 ч. 4–5, 8 343-ФЗ</span></div>
+      </div>
+      <aside class="channel-cta">
+        <h3>Не пропустите выход форм журналов и новых правил регистрации</h3>
+        <p>Следим за публикацией подзаконных актов к 343-ФЗ и разбираем практические изменения для парков и индустрии развлечений в Telegram-канале «Адвокат клиента».</p>
+        <div class="cta-qr-row">
+          <div class="qr-frame"><svg class="qr-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 41 41" shape-rendering="crispEdges" role="img" aria-label="QR-код Telegram-канала Адвокат клиента"><rect x="-3" y="-3" width="41" height="41" fill="#FFFFFF"/><path d="M1 1h7v1h-7zM12 1h1v1h-1zM17 1h1v1h-1zM20 1h4v1h-4zM25 1h1v1h-1zM27 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM9 2h1v1h-1zM11 2h8v1h-8zM20 2h1v1h-1zM23 2h1v1h-1zM27 2h1v1h-1zM33 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM9 3h1v1h-1zM13 3h2v1h-2zM16 3h1v1h-1zM20 3h4v1h-4zM25 3h1v1h-1zM27 3h1v1h-1zM29 3h3v1h-3zM33 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM15 4h3v1h-3zM22 4h3v1h-3zM27 4h1v1h-1zM29 4h3v1h-3zM33 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM9 5h2v1h-2zM12 5h1v1h-1zM15 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM24 5h1v1h-1zM27 5h1v1h-1zM29 5h3v1h-3zM33 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h3v1h-3zM16 6h4v1h-4zM21 6h1v1h-1zM23 6h2v1h-2zM27 6h1v1h-1zM33 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM25 7h1v1h-1zM27 7h7v1h-7zM10 8h3v1h-3zM14 8h2v1h-2zM17 8h1v1h-1zM19 8h1v1h-1zM21 8h1v1h-1zM23 8h3v1h-3zM3 9h1v1h-1zM6 9h4v1h-4zM11 9h3v1h-3zM18 9h1v1h-1zM21 9h1v1h-1zM25 9h2v1h-2zM28 9h5v1h-5zM1 10h4v1h-4zM6 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM20 10h1v1h-1zM24 10h5v1h-5zM31 10h1v1h-1zM33 10h1v1h-1zM1 11h1v1h-1zM4 11h1v1h-1zM6 11h7v1h-7zM16 11h1v1h-1zM19 11h1v1h-1zM21 11h4v1h-4zM27 11h3v1h-3zM32 11h2v1h-2zM3 12h2v1h-2zM6 12h1v1h-1zM11 12h7v1h-7zM19 12h3v1h-3zM23 12h1v1h-1zM26 12h1v1h-1zM28 12h1v1h-1zM30 12h1v1h-1zM1 13h2v1h-2zM4 13h2v1h-2zM7 13h1v1h-1zM9 13h3v1h-3zM14 13h3v1h-3zM18 13h3v1h-3zM22 13h2v1h-2zM25 13h3v1h-3zM29 13h2v1h-2zM33 13h1v1h-1zM8 14h3v1h-3zM12 14h2v1h-2zM15 14h1v1h-1zM20 14h1v1h-1zM22 14h4v1h-4zM27 14h1v1h-1zM33 14h1v1h-1zM2 15h6v1h-6zM11 15h2v1h-2zM14 15h1v1h-1zM16 15h1v1h-1zM18 15h2v1h-2zM21 15h1v1h-1zM24 15h1v1h-1zM26 15h1v1h-1zM29 15h1v1h-1zM31 15h1v1h-1zM33 15h1v1h-1zM2 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM9 16h3v1h-3zM15 16h1v1h-1zM17 16h2v1h-2zM21 16h1v1h-1zM23 16h1v1h-1zM26 16h2v1h-2zM32 16h2v1h-2zM1 17h1v1h-1zM3 17h2v1h-2zM6 17h2v1h-2zM10 17h1v1h-1zM12 17h3v1h-3zM16 17h2v1h-2zM20 17h1v1h-1zM23 17h2v1h-2zM27 17h2v1h-2zM30 17h3v1h-3zM3 18h1v1h-1zM5 18h2v1h-2zM12 18h1v1h-1zM14 18h2v1h-2zM21 18h1v1h-1zM24 18h1v1h-1zM27 18h2v1h-2zM31 18h1v1h-1zM33 18h1v1h-1zM1 19h1v1h-1zM4 19h1v1h-1zM7 19h3v1h-3zM16 19h1v1h-1zM18 19h1v1h-1zM24 19h1v1h-1zM28 19h4v1h-4zM33 19h1v1h-1zM3 20h1v1h-1zM5 20h2v1h-2zM8 20h1v1h-1zM14 20h1v1h-1zM17 20h3v1h-3zM24 20h1v1h-1zM27 20h2v1h-2zM30 20h1v1h-1zM1 21h4v1h-4zM7 21h2v1h-2zM10 21h4v1h-4zM16 21h2v1h-2zM21 21h1v1h-1zM24 21h1v1h-1zM28 21h1v1h-1zM33 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM11 22h2v1h-2zM16 22h4v1h-4zM21 22h2v1h-2zM28 22h1v1h-1zM30 22h2v1h-2zM33 22h1v1h-1zM1 23h2v1h-2zM5 23h3v1h-3zM14 23h5v1h-5zM20 23h1v1h-1zM24 23h1v1h-1zM26 23h2v1h-2zM29 23h2v1h-2zM33 23h1v1h-1zM3 24h2v1h-2zM6 24h1v1h-1zM8 24h1v1h-1zM12 24h1v1h-1zM14 24h2v1h-2zM17 24h3v1h-3zM21 24h1v1h-1zM28 24h3v1h-3zM32 24h2v1h-2zM1 25h2v1h-2zM6 25h2v1h-2zM9 25h3v1h-3zM13 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM24 25h7v1h-7zM9 26h1v1h-1zM14 26h2v1h-2zM22 26h2v1h-2zM25 26h1v1h-1zM29 26h1v1h-1zM32 26h2v1h-2zM1 27h7v1h-7zM9 27h1v1h-1zM11 27h1v1h-1zM14 27h6v1h-6zM21 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM29 27h1v1h-1zM31 27h1v1h-1zM33 27h1v1h-1zM1 28h1v1h-1zM7 28h1v1h-1zM9 28h1v1h-1zM11 28h2v1h-2zM17 28h1v1h-1zM19 28h4v1h-4zM24 28h2v1h-2zM29 28h2v1h-2zM32 28h2v1h-2zM1 29h1v1h-1zM3 29h3v1h-3zM7 29h1v1h-1zM10 29h1v1h-1zM13 29h1v1h-1zM15 29h2v1h-2zM20 29h1v1h-1zM22 29h1v1h-1zM24 29h6v1h-6zM1 30h1v1h-1zM3 30h3v1h-3zM7 30h1v1h-1zM10 30h1v1h-1zM13 30h1v1h-1zM15 30h1v1h-1zM21 30h2v1h-2zM26 30h1v1h-1zM28 30h5v1h-5zM1 31h1v1h-1zM3 31h3v1h-3zM7 31h1v1h-1zM9 31h1v1h-1zM11 31h1v1h-1zM15 31h1v1h-1zM18 31h1v1h-1zM21 31h1v1h-1zM29 31h2v1h-2zM32 31h2v1h-2zM1 32h1v1h-1zM7 32h1v1h-1zM10 32h1v1h-1zM12 32h1v1h-1zM16 32h3v1h-3zM20 32h1v1h-1zM23 32h1v1h-1zM25 32h3v1h-3zM30 32h2v1h-2zM1 33h7v1h-7zM10 33h5v1h-5zM18 33h1v1h-1zM20 33h1v1h-1zM25 33h1v1h-1zM29 33h3v1h-3zM33 33h1v1h-1z" fill="#161A20"/></svg></div>
+          <div class="cta-meta">
+            <strong>Адвокат клиента</strong>
+            <span>Автор: Константин Попов</span><br>
+            <a class="no-print-url" href="https://t.me/advokatklienta" target="_blank" rel="noopener" data-goal="click_channel">t.me/advokatklienta</a>
+          </div>
+        </div>
+        <a class="btn btn-teal" href="https://t.me/advokatklienta" target="_blank" rel="noopener" data-goal="click_channel">Перейти в «Адвокат клиента» в Telegram</a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h3>343-ФЗ «Об аттракционах» · практический разбор</h3>
+      <p><strong>Автор:</strong> Константин Попов · Telegram-канал <a class="no-print-url" href="https://t.me/advokatklienta" target="_blank" rel="noopener" data-goal="click_channel">«Адвокат клиента» (t.me/advokatklienta)</a></p>
+      <p>Справочный разбор по официальным текстам 343-ФЗ, ТР ЕАЭС 038/2016, ПП РФ № 1939 и № 1732 (актуально на 22.11.2026). Не является юридической консультацией.</p>
+      <p style="margin-top:10px;"><button type="button" class="btn btn-sm" id="footerPrintBtn">Распечатать / сохранить PDF</button></p>
+    </div>
+    <div>
+      <h3>Официальные источники</h3>
+      <ul class="footer-links">
+        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_548066/" target="_blank" rel="noopener">343-ФЗ от 02.11.2026 «Об аттракционах» (КонсультантПлюс)</a></li>
+        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_209468/" target="_blank" rel="noopener">ТР ЕАЭС 038/2016 «О безопасности аттракционов»</a></li>
+        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_342498/" target="_blank" rel="noopener">ПП РФ от 30.12.2019 № 1939 (ред. от 10.07.2025)</a></li>
+        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_342266/" target="_blank" rel="noopener">ПП РФ от 20.12.2019 № 1732 (ред. от 09.10.2021)</a></li>
+      </ul>
+    </div>
+    <div class="footer-qr" title="QR-код канала Адвокат клиента">
+      <svg class="qr-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 41 41" shape-rendering="crispEdges" role="img" aria-label="QR-код Telegram-канала Адвокат клиента"><rect x="-3" y="-3" width="41" height="41" fill="#FFFFFF"/><path d="M1 1h7v1h-7zM12 1h1v1h-1zM17 1h1v1h-1zM20 1h4v1h-4zM25 1h1v1h-1zM27 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM9 2h1v1h-1zM11 2h8v1h-8zM20 2h1v1h-1zM23 2h1v1h-1zM27 2h1v1h-1zM33 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM9 3h1v1h-1zM13 3h2v1h-2zM16 3h1v1h-1zM20 3h4v1h-4zM25 3h1v1h-1zM27 3h1v1h-1zM29 3h3v1h-3zM33 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM15 4h3v1h-3zM22 4h3v1h-3zM27 4h1v1h-1zM29 4h3v1h-3zM33 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM9 5h2v1h-2zM12 5h1v1h-1zM15 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM24 5h1v1h-1zM27 5h1v1h-1zM29 5h3v1h-3zM33 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h3v1h-3zM16 6h4v1h-4zM21 6h1v1h-1zM23 6h2v1h-2zM27 6h1v1h-1zM33 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM25 7h1v1h-1zM27 7h7v1h-7zM10 8h3v1h-3zM14 8h2v1h-2zM17 8h1v1h-1zM19 8h1v1h-1zM21 8h1v1h-1zM23 8h3v1h-3zM3 9h1v1h-1zM6 9h4v1h-4zM11 9h3v1h-3zM18 9h1v1h-1zM21 9h1v1h-1zM25 9h2v1h-2zM28 9h5v1h-5zM1 10h4v1h-4zM6 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM20 10h1v1h-1zM24 10h5v1h-5zM31 10h1v1h-1zM33 10h1v1h-1zM1 11h1v1h-1zM4 11h1v1h-1zM6 11h7v1h-7zM16 11h1v1h-1zM19 11h1v1h-1zM21 11h4v1h-4zM27 11h3v1h-3zM32 11h2v1h-2zM3 12h2v1h-2zM6 12h1v1h-1zM11 12h7v1h-7zM19 12h3v1h-3zM23 12h1v1h-1zM26 12h1v1h-1zM28 12h1v1h-1zM30 12h1v1h-1zM1 13h2v1h-2zM4 13h2v1h-2zM7 13h1v1h-1zM9 13h3v1h-3zM14 13h3v1h-3zM18 13h3v1h-3zM22 13h2v1h-2zM25 13h3v1h-3zM29 13h2v1h-2zM33 13h1v1h-1zM8 14h3v1h-3zM12 14h2v1h-2zM15 14h1v1h-1zM20 14h1v1h-1zM22 14h4v1h-4zM27 14h1v1h-1zM33 14h1v1h-1zM2 15h6v1h-6zM11 15h2v1h-2zM14 15h1v1h-1zM16 15h1v1h-1zM18 15h2v1h-2zM21 15h1v1h-1zM24 15h1v1h-1zM26 15h1v1h-1zM29 15h1v1h-1zM31 15h1v1h-1zM33 15h1v1h-1zM2 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM9 16h3v1h-3zM15 16h1v1h-1zM17 16h2v1h-2zM21 16h1v1h-1zM23 16h1v1h-1zM26 16h2v1h-2zM32 16h2v1h-2zM1 17h1v1h-1zM3 17h2v1h-2zM6 17h2v1h-2zM10 17h1v1h-1zM12 17h3v1h-3zM16 17h2v1h-2zM20 17h1v1h-1zM23 17h2v1h-2zM27 17h2v1h-2zM30 17h3v1h-3zM3 18h1v1h-1zM5 18h2v1h-2zM12 18h1v1h-1zM14 18h2v1h-2zM21 18h1v1h-1zM24 18h1v1h-1zM27 18h2v1h-2zM31 18h1v1h-1zM33 18h1v1h-1zM1 19h1v1h-1zM4 19h1v1h-1zM7 19h3v1h-3zM16 19h1v1h-1zM18 19h1v1h-1zM24 19h1v1h-1zM28 19h4v1h-4zM33 19h1v1h-1zM3 20h1v1h-1zM5 20h2v1h-2zM8 20h1v1h-1zM14 20h1v1h-1zM17 20h3v1h-3zM24 20h1v1h-1zM27 20h2v1h-2zM30 20h1v1h-1zM1 21h4v1h-4zM7 21h2v1h-2zM10 21h4v1h-4zM16 21h2v1h-2zM21 21h1v1h-1zM24 21h1v1h-1zM28 21h1v1h-1zM33 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM11 22h2v1h-2zM16 22h4v1h-4zM21 22h2v1h-2zM28 22h1v1h-1zM30 22h2v1h-2zM33 22h1v1h-1zM1 23h2v1h-2zM5 23h3v1h-3zM14 23h5v1h-5zM20 23h1v1h-1zM24 23h1v1h-1zM26 23h2v1h-2zM29 23h2v1h-2zM33 23h1v1h-1zM3 24h2v1h-2zM6 24h1v1h-1zM8 24h1v1h-1zM12 24h1v1h-1zM14 24h2v1h-2zM17 24h3v1h-3zM21 24h1v1h-1zM28 24h3v1h-3zM32 24h2v1h-2zM1 25h2v1h-2zM6 25h2v1h-2zM9 25h3v1h-3zM13 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM24 25h7v1h-7zM9 26h1v1h-1zM14 26h2v1h-2zM22 26h2v1h-2zM25 26h1v1h-1zM29 26h1v1h-1zM32 26h2v1h-2zM1 27h7v1h-7zM9 27h1v1h-1zM11 27h1v1h-1zM14 27h6v1h-6zM21 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM29 27h1v1h-1zM31 27h1v1h-1zM33 27h1v1h-1zM1 28h1v1h-1zM7 28h1v1h-1zM9 28h1v1h-1zM11 28h2v1h-2zM17 28h1v1h-1zM19 28h4v1h-4zM24 28h2v1h-2zM29 28h2v1h-2zM32 28h2v1h-2zM1 29h1v1h-1zM3 29h3v1h-3zM7 29h1v1h-1zM10 29h1v1h-1zM13 29h1v1h-1zM15 29h2v1h-2zM20 29h1v1h-1zM22 29h1v1h-1zM24 29h6v1h-6zM1 30h1v1h-1zM3 30h3v1h-3zM7 30h1v1h-1zM10 30h1v1h-1zM13 30h1v1h-1zM15 30h1v1h-1zM21 30h2v1h-2zM26 30h1v1h-1zM28 30h5v1h-5zM1 31h1v1h-1zM3 31h3v1h-3zM7 31h1v1h-1zM9 31h1v1h-1zM11 31h1v1h-1zM15 31h1v1h-1zM18 31h1v1h-1zM21 31h1v1h-1zM29 31h2v1h-2zM32 31h2v1h-2zM1 32h1v1h-1zM7 32h1v1h-1zM10 32h1v1h-1zM12 32h1v1h-1zM16 32h3v1h-3zM20 32h1v1h-1zM23 32h1v1h-1zM25 32h3v1h-3zM30 32h2v1h-2zM1 33h7v1h-7zM10 33h5v1h-5zM18 33h1v1h-1zM20 33h1v1h-1zM25 33h1v1h-1zM29 33h3v1h-3zM33 33h1v1h-1z" fill="#161A20"/></svg>
+    </div>
+  </div>
+</footer>
+
+<script>
+const GUIDE_DATA = {"meta": {"lawShort": "343-ФЗ «Об аттракционах»", "lawFull": "Федеральный закон от 02.11.2026 № 343-ФЗ «Об аттракционах»", "lawUrl": "https://www.consultant.ru/document/cons_doc_LAW_548066/", "signedDate": "02.11.2026", "effectiveDate": "01.03.2027", "updatedDate": "22.11.2026", "author": "Константин Попов", "channelName": "Адвокат клиента", "channelHandle": "@advokatklienta", "channelUrl": "https://t.me/advokatklienta", "channelShort": "t.me/advokatklienta", "guideSlug": "343fz", "guideUrl": "https://konstantinpopov89.github.io/343fz/", "guideShort": "konstantinpopov89.github.io/343fz/", "metrikaId": 114499063, "disclaimer": "Справочный разбор по официальным текстам 343-ФЗ, ТР ЕАЭС 038/2016, ПП РФ № 1939 и № 1732 (актуально на 22.11.2026). Не является юридической консультацией.", "disclaimerShort": "Актуально на 22.11.2026 · не является юридической консультацией"}, "heroStats": [{"value": "01.03.2027", "label": "Единый федеральный закон вступает в силу по всей РФ", "article": "ст. 20", "tone": "blue"}, {"value": "Каждый переезд", "label": "Новое освидетельствование при смене места + раз в 12 мес. на все RB-1..RB-3", "article": "ст. 15 ч. 1", "tone": "red"}, {"value": "до 21 раб. дня", "label": "Запрет работы на время проверки, условные акты вне закона", "article": "ст. 15 ч. 2–5", "tone": "amber"}, {"value": "2 журнала + кадры", "label": "Единые требования к журналам и аттестация операторов (можно самим)", "article": "ст. 14 ч. 4, ст. 17", "tone": "teal"}], "rbScale": [{"code": "RB-4", "name": "Ничтожный риск", "status": "Вне 343-ФЗ", "height": "H ≤ 0,4 м", "speed": "V ≤ 3 м/с", "barPct": 12, "conformity": "Не подпадает под 343-ФЗ", "docType": "Паспорт изготовителя (подтверждение RB-4)", "examples": "Малышковый батут с игровой поверхностью ≤ 40 см, медленная мини-карусель до 40 см и до 3 м/с", "tone": "teal"}, {"code": "RB-3", "name": "Низкий риск", "status": "Под 343-ФЗ", "height": "0,4 < H ≤ 2 м", "speed": "3 < V ≤ 10 м/с", "barPct": 38, "conformity": "Декларация + регистрация", "docType": "Паспорт аттракциона (Прил. 6 ТР ЕАЭС)", "examples": "Небольшие карусели, надувные батуты и горки до 2 м, водные горки до 2 м, автодром, парковый поезд", "tone": "blue"}, {"code": "RB-2", "name": "Средний риск", "status": "Под 343-ФЗ", "height": "2 < H ≤ 8 м", "speed": "10 < V ≤ 20 м/с", "barPct": 70, "conformity": "Декларация + регистрация", "docType": "Формуляр (Прил. 5 ТР ЕАЭС)", "examples": "Семейные горки, большие надувные и водные горки 3–7 м, цепочные карусели средней высоты, качели", "tone": "amber"}, {"code": "RB-1", "name": "Высокий риск", "status": "Под 343-ФЗ", "height": "H > 8 м", "speed": "V > 20 м/с", "barPct": 100, "conformity": "Сертификат + регистрация", "docType": "Формуляр (Прил. 5 ТР ЕАЭС)", "examples": "Колесо обозрения, экстремальные горки, башня падения, кресла с наклоном на высоте H ≥ 3 м", "tone": "red"}], "roles": [{"id": "park", "shortTitle": "Стационарный парк", "subtitle": "Владелец или директор", "summary": "Ежегодное освидетельствование требовалось и раньше по ТР ЕАЭС 038/2016 и ПП № 1939, но с 01.03.2027 ст. 15 жёстко фиксирует простой на время проверки (до 21 рабочего дня) и прямо запрещает акты «с оговорками». Главная задача директора — не потерять майские праздники.", "theses": [{"title": "Простой до 21 рабочего дня и полный запрет актов «с замечаниями»", "text": "На время оценки технического состояния эксплуатация аттракциона прямо запрещена (ч. 2). Акт оформляется до 21 рабочего дня (ч. 3), а формулировка «допущен при условии устранения замечаний» вне закона (ч. 4–5). Любая неполадка держит объект закрытым до повторного чистого акта.", "articles": ["ст. 15 ч. 2–5"]}, {"title": "Единый контур освидетельствования для старых и новых машин", "text": "343-ФЗ сводит в один федеральный закон все аттракционы RB-1..RB-3 — и введённые до 18.04.2018, и выпущенные после (ежегодно по п. 130 ТР ЕАЭС 038/2016 и ст. 15 ч. 1). Дополнительно проверка обязательна после разрушения критичных компонентов, капремонта или модификации.", "articles": ["ст. 15 ч. 1", "ст. 18 ч. 3 п. 3"]}, {"title": "Продление срока службы можно совместить с ежегодной проверкой", "text": "Истечение назначенного срока службы не означает списание: аккредитованная организация продлевает эксплуатацию до +1 года. Обследование разрешено провести заранее внутри ежегодного освидетельствования, чтобы не останавливать аттракцион дважды.", "articles": ["ст. 16 ч. 1–4"]}, {"title": "Три основания мгновенного запрета и доступ инвалидов", "text": "Гостехнадзор запрещает эксплуатацию при просрочке освидетельствования, проблеме с регистрацией в РИС или истечении срока службы/продления. После запрета парк обязан физически преградить доступ гостей. Также закреплена обязанность обеспечивать доступ инвалидов, если воздействия для них допустимы.", "articles": ["ст. 9 ч. 7", "ст. 11 ч. 3", "ст. 14 ч. 2", "ст. 18 ч. 7, 9"]}], "examples": [{"title": "Сезонный парк готовит колесо обозрения (RB-1) и семейные горки (RB-2) к 1 мая", "situation": "Раньше лабораторию часто вызывали в середине апреля, рассчитывая получить акт с оговоркой «доустранить замечания по ходу мая» и не срывать открытие.", "action": "С 01.03.2027 условные акты прямо запрещены (ст. 15 ч. 5), а на время проверки (до 21 рабочего дня) объект обязан стоять (ч. 2–3). Посчитайте обратную дату старта в калькуляторе ниже и бронируйте лабораторию на март с буфером на ремонт."}, {"title": "У автодрома летом 2027 истекает 10-летний назначенный срок службы", "situation": "Если ждать даты окончания, придётся останавливать работу и ждать отдельное обследование остаточного ресурса до 21 рабочего дня.", "action": "Закажите оценку остаточного ресурса заранее в рамках весеннего ежегодного освидетельствования (ст. 16 ч. 3) — пройдёте проверку за одну остановку и получите продление до 12 месяцев."}], "checklist": [{"id": "p1", "text": "Составить реестр всех объектов парка: отделить RB-1..RB-3 от исключений ч. 2 ст. 2 (RB-4, детские площадки, тиры/верёвочные).", "article": "ст. 2 ч. 1–2"}, {"id": "p2", "text": "Рассчитать график ежегодного освидетельствования всех RB-1..RB-3 с запасом минимум 21 рабочий день + буфер на ремонт до старта высокого сезона.", "article": "ст. 15 ч. 1–5"}, {"id": "p3", "text": "Найти машины с истекающим в 2027 году сроком службы и объединить оценку остаточного ресурса с ежегодной проверкой.", "article": "ст. 16 ч. 3–5"}, {"id": "p4", "text": "Проверить электронные записи по всем аттракционам в региональной информационной системе (РИС) и актуальность данных.", "article": "ст. 9 ч. 7, ст. 11 ч. 3, ст. 18 ч. 7"}, {"id": "p5", "text": "Проверить регламент доступа инвалидов на те аттракционы, где биомеханические воздействия для них допустимы по эксплуатационной документации.", "article": "ст. 14 ч. 2"}], "articlesRef": [{"code": "ст. 2", "note": "Сфера действия (RB-1..RB-3 из Приложения 1 ТР ЕАЭС) и исключения (RB-4, площадки, спорт, ОПО-канатки)."}, {"code": "ст. 9 ч. 7, ст. 11 ч. 3", "note": "Подтверждение регистрации — электронная запись в РИС; сведения о регистрации, эксплуатанте и месте предоставляются из РИС."}, {"code": "ст. 14 ч. 2", "note": "Обязанность эксплуатанта поддерживать исправность и обеспечивать доступ инвалидов, если воздействия допустимы."}, {"code": "ст. 15 ч. 1–5", "note": "Освидетельствование аккредитованной организацией (раз в 12 мес., переезд, авария, капремонт), запрет работы до 21 р.д., запрет условных актов."}, {"code": "ст. 16 ч. 1–7", "note": "Оценка остаточного ресурса (до +1 года, до 21 р.д., можно совместить с ежегодным освидетельствованием по ч. 3)."}, {"code": "ст. 18 ч. 7–9", "note": "3 основания запрета эксплуатации и обязанность физически преградить несанкционированный доступ."}]}, {"id": "mobile", "shortTitle": "Мобильные и батуты", "subtitle": "Владелец или ИП с переездами", "summary": "Самый жёсткий удар 343-ФЗ приходится на перевозные карусели, надувные горки и батуты: закон впервые на федеральном уровне требует новое аккредитованное освидетельствование при каждом изменении места установки и запрещает работать без статуса ЮЛ или ИП.", "theses": [{"title": "Каждый переезд на новую площадку = новое освидетельствование", "text": "Закон прямо обязывает проходить оценку технического состояния в аккредитованной организации не только раз в 12 месяцев, но и «в случае изменения места установки или нахождения аттракциона». При переезде на праздник в другой парк или район старый акт новую точку не закрывает.", "articles": ["ст. 15 ч. 1"]}, {"title": "Эксплуатант — только юрлицо или ИП (самозанятым нельзя)", "text": "Государственная и временная регистрация оформляются исключительно на эксплуатанта, которым по закону может быть только юридическое лицо или индивидуальный предприниматель.", "articles": ["ст. 9 ч. 5–6, 9"]}, {"title": "После каждого монтажа — полная проверка, на время освидетельствования — простой", "text": "После частичной или полной разборки (при каждом монтаже мобильного объекта) эксплуатант обязан провести полную проверку своими силами, а на период аккредитованного освидетельствования — не допускать пассажиров (предельный срок акта до 21 рабочего дня).", "articles": ["ст. 14 ч. 7", "ст. 15 ч. 2–3"]}, {"title": "Проверьте высоту: малышковые батуты ≤ 0,4 м (RB-4) вне 343-ФЗ", "text": "Если у надувного батута или мини-карусели максимальная высота подъёма/спуска не превышает 0,4 м и скорость не выше 3 м/с (ничтожная степень риска RB-4 по Приложению 2 ТР ЕАЭС 038/2016), 343-ФЗ на них не распространяется. Выше 0,4 м — уже RB-3 и полный контур закона.", "articles": ["ст. 2 ч. 1–2", "Прил. 2 ТР ЕАЭС 038/2016"]}], "examples": [{"title": "Надувная горка высотой 3,5 м (RB-2) на выездной День города", "situation": "ИП планирует привезти горку на 2 дня городского праздника, а через неделю перевезти на следующую площадь.", "action": "По ст. 15 ч. 1 смена места установки требует нового акта освидетельствования аккредитованной организации до запуска с детьми (плюс временная регистрация по месту пребывания). Экономику коротких 1–2-дневных выездов с объектами RB-1..RB-3 нужно пересчитать заранее."}, {"title": "Детский надувной мини-батут с игровой площадкой 35 см и горкой до 40 см", "situation": "Предприниматель сомневается, нужно ли регистрировать и вызывать лабораторию на каждый переезд.", "action": "Если паспорт изготовителя подтверждает ничтожную степень риска RB-4 (H ≤ 0,4 м, V ≤ 3 м/с), 343-ФЗ не применяется (ч. 2 ст. 2). Держите паспорт изготовителя с указанием RB-4 прямо на точке для проверяющих."}], "checklist": [{"id": "m1", "text": "Проверить юридический статус: все аттракционы RB-1..RB-3 должны эксплуатироваться от ИП или ООО (не от физлица/самозанятого).", "article": "ст. 9 ч. 6"}, {"id": "m2", "text": "Сверить по паспорту/формуляру высоту и степень риска каждого батута или карусели: отделить RB-4 (H ≤ 0,4 м) от RB-3..RB-1.", "article": "ст. 2 ч. 1–2"}, {"id": "m3", "text": "Пересчитать экономику частых переездов с учётом цены и сроков аккредитованного освидетельствования на каждой новой площадке.", "article": "ст. 15 ч. 1, 3"}, {"id": "m4", "text": "Заложить в договор с организатором площадки срок монтажа и простоя до получения акта освидетельствования и временной регистрации.", "article": "ст. 9 ч. 9, ст. 15 ч. 2, ст. 18 ч. 7 п. 2"}, {"id": "m5", "text": "Завести 2 журнала на каждый объект и фиксировать обучение/аттестацию каждого оператора в журнале ежедневного допуска.", "article": "ст. 14 ч. 4, ст. 17 ч. 4"}], "articlesRef": [{"code": "ст. 2 ч. 1–2", "note": "Распространяется на временно устанавливаемые (перевозимые) аттракционы RB-1..RB-3; исключает RB-4."}, {"code": "ст. 3 ч. 1 п. 5, ст. 9 ч. 9", "note": "Временная госрегистрация по месту пребывания ранее зарегистрированного перевозимого аттракциона."}, {"code": "ст. 9 ч. 5–6", "note": "Эксплуатант — только юридическое лицо или ИП."}, {"code": "ст. 14 ч. 7", "note": "Обязательная полная проверка своими силами после частичной или полной разборки аттракциона."}, {"code": "ст. 15 ч. 1–5", "note": "Освидетельствование аккредитованной организацией раз в 12 мес. и при каждой смене места установки; простой до 21 р.д."}, {"code": "ст. 18 ч. 7 п. 1–2", "note": "Запрет эксплуатации при отсутствии временной регистрации или акта освидетельствования."}]}, {"id": "tech", "shortTitle": "Техдиректор / инженер / юрист", "subtitle": "Эксплуатация, документы и надзор", "summary": "343-ФЗ не отменяет ТР ЕАЭС 038/2016 и постановления № 1939 / № 1732, а надстраивает единый федеральный каркас: единые требования к 2 журналам для всех машин (не только до 2018 года), узаконенную аттестацию персонала, запрет условных актов и надзор по 248-ФЗ.", "theses": [{"title": "Четыре уровня регулирования + региональные НПА остаются", "text": "Одновременно действуют: ТР ЕАЭС 038/2016 (проектирование, риски, оценка соответствия, ежегодное освидетельствование по п. 130), 343-ФЗ (единый каркас с 01.03.2027), ПП РФ № 1939 (регистрация, ждёт обновления) и ПП РФ № 1732 (эксплуатация машин, введённых до 18.04.2018), плюс региональные положения о надзоре и РИС.", "articles": ["ст. 4", "ст. 5", "ст. 8", "ст. 18 ч. 3"]}, {"title": "Два обязательных журнала для всех машин и триггеры полной проверки", "text": "Раньше утверждённые формы обоих журналов (Прил. 1 — ежедневный допуск, Прил. 2 — ТОиР) в ПП РФ № 1732 действовали только для машин до 18.04.2018. Ст. 14 ч. 4 вводит единые федеральные требования и порядок ведения обоих журналов для всех аттракционов (приказ ждём). Своя полная проверка обязательна после простоя > 12 мес., техпростоя или разборки.", "articles": ["ст. 14 ч. 4, 7"]}, {"title": "Обучение и аттестация персонала: можно самим, но с оговоркой ч. 1", "text": "Перед допуском персонал обязан быть обучен безопасной эксплуатации, действиям в нештатных ситуациях и обеспечению доступа инвалидов, а также аттестован. Эксплуатант вправе провести аттестацию сам и сам выбрать форму/сроки обучения, НО если эксплуатационная документация аттракциона задаёт требования к квалификации — их нужно соблюсти. Факт фиксируется в журнале ежедневного допуска.", "articles": ["ст. 17 ч. 1–4"]}, {"title": "Внеплановое освидетельствование, критичные узлы и 248-ФЗ", "text": "Помимо ежегодного графика и переезда, аккредитованное освидетельствование обязательно после разрушения критичных компонентов (из формуляра по Прил. 5 ТР ЕАЭС 038/2016), создавшего угрозу или вред, и после капремонта/модификации. Условные акты и заключения запрещены. Надзор идёт по 248-ФЗ с правом запрета по 3 основаниям.", "articles": ["ст. 15 ч. 1 п. 3–4, ч. 4–5", "ст. 16 ч. 6–7", "ст. 18 ч. 2, 7–9"]}], "examples": [{"title": "Наём сезонных операторов-студентов в апреле", "situation": "Парк сомневается, нужно ли отправлять 15 сезонных операторов в учебный центр за внешними удостоверениями.", "action": "Проверьте требования к персоналу в эксплуатационной документации каждого аттракциона (ст. 17 ч. 1). Если внешнее удостоверение там не требуется, проведите внутреннее обучение (безопасность, нештатные ситуации, доступ инвалидов) и внутреннюю аттестацию, а отметку внесите в журнал ежедневного допуска (ст. 17 ч. 2–4)."}, {"title": "После консервации на 14 месяцев или ремонта редуктора с разборкой", "situation": "Аттракцион простоял больше года либо прошёл ремонт со снятием узлов.", "action": "Проведите полную проверку своими силами по руководству (ст. 14 ч. 7). Если ремонт был капитальным или с модификацией конструкции — дополнительно обязательно аккредитованное освидетельствование до запуска (ст. 15 ч. 1 п. 4)."}], "checklist": [{"id": "t1", "text": "Сверить эксплуатационную документацию: формуляры (Прил. 5 ТР ЕАЭС) для RB-1 и RB-2 (вкл. перечень критичных компонентов), паспорта (Прил. 6) для RB-3 и требования к квалификации персонала.", "article": "ст. 15 ч. 1 п. 3, ст. 17 ч. 1"}, {"id": "t2", "text": "Проверить аккредитацию испытательной лаборатории в национальной системе аккредитации до заключения договора.", "article": "ст. 15 ч. 1, ст. 16 ч. 1"}, {"id": "t3", "text": "Разработать программу внутреннего обучения и протокол аттестации операторов (безопасность + нештатные ситуации + доступ инвалидов) с отметкой в журнале допуска.", "article": "ст. 17 ч. 2–4"}, {"id": "t4", "text": "Настроить мониторинг выхода федерального акта по 2 журналам, новой редакции ПП № 1939 и регионального положения о госконтроле по 248-ФЗ.", "article": "ст. 14 ч. 4, ст. 18 ч. 4–5"}, {"id": "t5", "text": "Подготовить процедуру физического ограничения доступа на случай приостановки или запрета эксплуатации.", "article": "ст. 18 ч. 9"}], "articlesRef": [{"code": "ст. 4, ст. 8, ст. 11", "note": "Система НПА (включая региональные акты) и 14 подпунктов регистрационных данных в РИС (ч. 2 п. 1)."}, {"code": "ст. 14 ч. 4, 7", "note": "Единые федеральные требования к 2 журналам (для всех машин) + триггеры своей полной проверки."}, {"code": "ст. 15 ч. 1–5, ст. 16", "note": "Случаи освидетельствования, критичные компоненты (Прил. 5 ТР ЕАЭС), 21 р.д., запрет условных актов, продление ресурса до 1 года."}, {"code": "ст. 17 ч. 1–4", "note": "Квалификация по эксплуатационной документации (ч. 1), обучение и своя аттестация (ч. 2–3), отметка в журнале допуска (ч. 4)."}, {"code": "ст. 18, ст. 19", "note": "Региональный контроль по 248-ФЗ, 3 основания запрета, перекрытие доступа, отсылка к ответственности (КоАП РФ / УК РФ)."}]}, {"id": "vendor", "shortTitle": "Поставщик и подрядчик ТО", "subtitle": "Производитель, монтажник, сервис", "summary": "Закон прямо закрепляет ответственность сторонних подрядчиков по ТО и ремонту (ст. 14 ч. 6) и жёстко связывает эксплуатационную документацию изготовителя с расходами парка, квалификацией операторов и правом работать без простоев.", "theses": [{"title": "Сторонние подрядчики по ТО и ремонту отвечают по закону напрямую", "text": "Юрлица и ИП, которых парк привлекает разово или регулярно для техобслуживания и ремонта, прямо обязаны выполнять работы в соответствии с установленными законодательством РФ нормами, правилами и процедурами — сослаться на то, что «отвечает только эксплуатант», больше нельзя.", "articles": ["ст. 14 ч. 6", "ст. 19"]}, {"title": "Проектирование, изготовление и монтаж — с оценкой соответствия", "text": "Требования к проектированию, изготовлению и монтажу заданы ТР ЕАЭС 038/2016 и закреплены в 343-ФЗ. Выпуск в обращение допускается только после обязательной сертификации (RB-1) или декларирования соответствия (RB-2, RB-3).", "articles": ["ст. 12 ч. 1–2", "ст. 13 ч. 1–2"]}, {"title": "Документация изготовителя управляет расходами и персоналом парка", "text": "Изготовитель задаёт нормы ТОиР (ст. 14 ч. 5), назначенный срок службы/ресурс (ст. 3, ст. 16), формуляр с критичными компонентами для RB-1/RB-2 (Прил. 5 ТР ЕАЭС) или паспорт для RB-3 (Прил. 6), а также требования к квалификации операторов (ст. 17 ч. 1). Небрежная документация создаёт парку риски запрета работы.", "articles": ["ст. 14 ч. 5", "ст. 15 ч. 1 п. 3", "ст. 17 ч. 1"]}, {"title": "Капремонт и модификация запускают обязательное освидетельствование", "text": "Если подрядчик или поставщик выполняет капитальный ремонт или модификацию аттракциона, парк обязан пройти аккредитованное освидетельствование до возврата объекта в работу (до 21 рабочего дня простоя). Заранее закладывайте этот этап в сроки сдачи по договору.", "articles": ["ст. 15 ч. 1 п. 4, ч. 2–3"]}], "examples": [{"title": "Подрядный ИП-механик проводит плановое ТО и замену узла гидравлики", "situation": "Раньше сервисный подрядчик часто ограничивался актом выполненных работ в свободной форме.", "action": "По ст. 14 ч. 5–6 подрядчик обязан строго следовать руководству по ТОиР изготовителя и нормам РФ и передавать данные для Журнала учёта ТОиР парка (ст. 14 ч. 4). При капремонте/модификации — предупредить заказчика об обязательном освидетельствовании (ст. 15 ч. 1 п. 4)."}, {"title": "Поставка новой семейной карусели (RB-2) или батута (RB-3) в парк", "situation": "Покупателю критично быстро ввести аттракцион в эксплуатацию к маю.", "action": "Проверьте пакет заранее: декларация соответствия (для RB-1 — сертификат), формуляр по Прил. 5 (для RB-1 и RB-2) или паспорт по Прил. 6 (для RB-3) с корректной степенью риска и выполнимыми требованиями к квалификации операторов."}], "checklist": [{"id": "v1", "text": "Проверить комплект оценки соответствия (сертификат для RB-1, декларация для RB-2 и RB-3) до передачи заказчику.", "article": "ст. 13 ч. 1–2"}, {"id": "v2", "text": "Аудировать формуляры (Прил. 5 для RB-1/RB-2), паспорта (Прил. 6 для RB-3) и руководства по ТОиР: корректный RB, срок службы, критичные компоненты, реалистичные требования к персоналу.", "article": "ст. 14 ч. 5, ст. 17 ч. 1"}, {"id": "v3", "text": "Привести договоры и регламенты сервисного ТОиР в соответствие с нормами РФ и фиксацией работ для Журнала ТОиР заказчика.", "article": "ст. 14 ч. 4, 6"}, {"id": "v4", "text": "Включать в график капремонта или модификации этап аккредитованного освидетельствования до 21 рабочего дня.", "article": "ст. 15 ч. 1 п. 4, ч. 3"}], "articlesRef": [{"code": "ст. 12", "note": "Обязательные требования к проектированию, изготовлению и монтажу по ТР ЕАЭС 038/2016."}, {"code": "ст. 13", "note": "Оценка соответствия при выпуске в обращение: сертификация (RB-1) или декларирование (RB-2, RB-3)."}, {"code": "ст. 14 ч. 5–6", "note": "Нормы ТОиР задаёт изготовитель; сторонние ЮЛ/ИП по ТОиР обязаны соблюдать установленные нормы и процедуры."}, {"code": "ст. 15 ч. 1 п. 4", "note": "Обязательное освидетельствование после капремонта или модификации аттракциона."}, {"code": "ст. 17 ч. 1, ст. 19", "note": "Квалификация персонала определяется эксплуатационной документацией; ответственность по законодательству РФ."}]}], "beforeAfter": [{"topic": "Аккредитованное освидетельствование и переезды", "before": "Ежегодное освидетельствование уже требовалось по п. 130 ТР ЕАЭС 038/2016 (и ПП № 1939 приостанавливало регистрацию без акта), но переезды и единый режим для всех машин в одном ФЗ не были жёстко закреплены", "after": "На уровне ФЗ сведены все RB-1..RB-3 (и до, и после 18.04.2018) + добавлено обязательное освидетельствование при КАЖДОМ изменении места установки, после разрушения критичных узлов и капремонта", "article": "ст. 15 ч. 1", "impact": "high"}, {"topic": "Простой, срок 21 рабочий день и запрет условных актов", "before": "На практике нередко встречались акты «с оговоркой об устранении замечаний» и размытые сроки проведения оценки", "after": "Прямой запрет работы на время проверки, предельный срок до 21 рабочего дня и прямой запрет условных актов/заключений «при условии устранения замечаний»", "article": "ст. 15 ч. 2–5, ст. 16 ч. 5–7", "impact": "high"}, {"topic": "Учётные журналы на аттракционе", "before": "Утверждённые формы обоих журналов (Прил. 1 — допуск, Прил. 2 — ТОиР) в ПП РФ № 1732 действовали только для аттракционов, введённых до 18.04.2018; для новых машин единых форм РФ не было", "after": "На уровне ФЗ закреплены 2 обязательных журнала (ежедневного допуска и ТОиР) по единым федеральным требованиям для ВСЕХ аттракционов (федеральный акт ждём)", "article": "ст. 14 ч. 4", "impact": "medium"}, {"topic": "Обучение и аттестация операторов", "before": "Регулировалось стандартами, ПП № 1732 (для машин до 2018 г.) и инструкциями изготовителей; в ТР ЕАЭС 038/2016 напрямую не входило", "after": "Прямая обязанность обучать (вкл. нештатные ситуации и доступ инвалидов) и аттестовать с отметкой в журнале допуска — но можно проводить самим, если документация не требует иного", "article": "ст. 17 ч. 1–4", "impact": "medium"}, {"topic": "Запрет эксплуатации и физическое перекрытие доступа", "before": "Механизмы остановки были разнесены по правилам регистрации (ПП № 1939), региональным актам и общим нормам надзора", "after": "3 чётких основания запрета в ФЗ по итогам КНМ (248-ФЗ) + прямая обязанность физически преградить несанкционированный доступ людей", "article": "ст. 18 ч. 2, 7–9", "impact": "high"}, {"topic": "Сфера действия, регистрация и региональные правила", "before": "ТР ЕАЭС 038/2016 (RB-1..RB-3), регистрация в Гостехнадзоре (ПП № 1939), региональные акты", "after": "Базовый каркас сохранён: те же RB-1..RB-3, эксплуатант только ЮЛ/ИП, электронная запись в РИС; региональные акты не отменены", "article": "ст. 2, ст. 4, ст. 9–11", "impact": "low"}], "banTriggers": [{"num": "1", "title": "Нет освидетельствования", "desc": "Не пройдена оценка техсостояния в срок (раз в 12 мес., после переезда, разрушения критичных узлов, капремонта или модификации).", "article": "ст. 18 ч. 7 п. 1 → ст. 15"}, {"num": "2", "title": "Проблема с регистрацией", "desc": "Государственная или временная регистрация отсутствует, приостановлена либо прекращена в РИС.", "article": "ст. 18 ч. 7 п. 2 → ст. 9"}, {"num": "3", "title": "Истёк срок или ресурс", "desc": "Закончился назначенный срок службы/ресурс от изготовителя либо срок продления (+1 год) без нового обследования.", "article": "ст. 18 ч. 7 п. 3 → ст. 16"}], "myths": [{"myth": "«Аттракцион куплен до 2018 года — ТР ЕАЭС к нему не относится, 343-ФЗ его не касается»", "truth": "Касается напрямую. «Дорегламентные» аттракционы прямо включены в ежегодное освидетельствование и в предмет регионального контроля.", "article": "ст. 15 ч. 1 п. 1, ст. 18 ч. 3 п. 3"}, {"myth": "«Попросим лабораторию выдать акт с замечаниями — откроемся на майские и доделаем потом»", "truth": "Прямой запрет закона. Акт и заключение обязаны однозначно разрешать или запрещать работу; формулировка «при условии устранения замечаний» не допускается.", "article": "ст. 15 ч. 4–5, ст. 16 ч. 6–7"}, {"myth": "«Мобильный батут проверил раз в год — можно возить по праздникам, хоть на самозанятого»", "truth": "Две ошибки сразу: эксплуатантом может быть только ЮЛ или ИП, а освидетельствование требуется при каждом изменении места установки (кроме RB-4 ≤ 0,4 м).", "article": "ст. 9 ч. 6, ст. 15 ч. 1"}, {"myth": "«Истёк назначенный срок службы 7 лет — аттракцион пора резать на металлолом»", "truth": "Нет. При исправном состоянии аккредитованная организация проводит оценку остаточного ресурса и продлевает срок эксплуатации (до +1 года каждый раз).", "article": "ст. 16 ч. 1, 4"}, {"myth": "«Федеральный закон полностью отменил местные правила регионов»", "truth": "Нет. Закон прямо включает законы и НПА субъектов РФ в правовую базу; положение о госконтроле и порядок работы РИС утверждает каждый регион.", "article": "ст. 4, ст. 8 ч. 2"}], "goodNews": [{"title": "Обучать и аттестовать операторов можно своими силами", "text": "Эксплуатант сам выбирает формы, методы, место и сроки обучения и вправе сам проводить аттестацию — с записью в журнале ежедневного допуска. Оговорка ч. 1 ст. 17: если эксплуатационная документация аттракциона задаёт специальные требования к квалификации, их необходимо соблюсти.", "article": "ст. 17 ч. 1–4"}, {"title": "Оценку остаточного ресурса можно совместить с ежегодным освидетельствованием", "text": "Если срок службы подходит к концу, не нужно останавливать аттракцион дважды на 21 рабочий день: обследование по ст. 16 разрешено провести внутри ежегодного освидетельствования по ст. 15.", "article": "ст. 16 ч. 3"}], "bylawRadar": [{"name": "Единые требования и порядок ведения 2 обязательных журналов", "basis": "ст. 14 ч. 4 343-ФЗ", "status": "Ждём федеральный акт", "now": "На 22.11.2026 не опубликован (проверено по publication.pravo.gov.ru и КонсультантПлюс). Пока утверждённые формы обоих журналов (Прил. 1 — допуск, Прил. 2 — ТОиР) из ПП РФ № 1732 действуют только для аттракционов, введённых до 18.04.2018."}, {"name": "Обновлённые Правила государственной регистрации аттракционов", "basis": "ст. 5 п. 5, 7; ст. 9 ч. 4 343-ФЗ", "status": "Ждём постановление Правительства РФ", "now": "На 22.11.2026 действует ПП РФ от 30.12.2019 № 1939 в редакции от 10.07.2025; редакция под 343-ФЗ ещё не опубликована."}, {"name": "Общие требования к госконтролю и обновлённые региональные положения", "basis": "ст. 18 ч. 4–5, 8 343-ФЗ", "status": "Ждём акт Правительства РФ и акты субъектов РФ", "now": "На 22.11.2026 федеральных актов под 343-ФЗ в реестре publication.pravo.gov.ru не опубликовано; регионы обновляют положения к 01.03.2027."}], "cards": [{"num": "01", "total": "08", "tag": "Главное", "title": "Новый закон об аттракционах 343-ФЗ: что меняется с 1 марта 2027", "lead": "Впервые принят единый федеральный закон об эксплуатации аттракционов (02.11.2026 № 343-ФЗ, 20 статей). Он сохраняет базу ТР ЕАЭС 038/2016, но жёстко меняет практику проверок и переездов.", "points": [{"badge": "ст. 15 ч. 1", "text": "Аккредитованное освидетельствование — раз в 12 мес. на все RB-1..RB-3 (и до, и после 2018 г.) + теперь при КАЖДОМ переезде."}, {"badge": "ст. 15 ч. 2–5", "text": "На время проверки объект стоит (до 21 раб. дня). Акты «при условии устранения замечаний» прямо запрещены."}, {"badge": "ст. 14, 17", "text": "Единые требования к 2 журналам для всех машин + обязательное обучение и аттестация персонала."}, {"badge": "ст. 18 ч. 7–9", "text": "3 прямых основания для запрета эксплуатации + обязанность физически перекрыть доступ."}], "accent": "blue"}, {"num": "02", "total": "08", "tag": "Сфера действия · ст. 2", "title": "Попадает ли ваш объект под 343-ФЗ?", "lead": "Закон действует при двух условиях сразу: вид есть в Приложении 1 ТР ЕАЭС 038/2016 И степень риска RB-1, RB-2 или RB-3 (Приложение 2, по высоте, скорости и наклону кресел).", "visual": "rb_scale", "points": [{"badge": "Под 343-ФЗ", "badgeTone": "blue", "text": "Механизированные аттракционы, карусели, колёса, водные и надувные горки/батуты, автодромы, картинги, симуляторы с H > 0,4 м, V > 3 м/с или наклоном кресел."}, {"badge": "Вне 343-ФЗ", "badgeTone": "teal", "text": "RB-4 (H ≤ 0,4 м и V ≤ 3 м/с), детские площадки, канатные дороги-ОПО, спорт, личные нужды и виды вне Прил. 1 (тиры, верёвочные парки)."}], "accent": "blue"}, {"num": "03", "total": "08", "tag": "Главный удар · ст. 15", "title": "Освидетельствование: простой до 21 р.д., без оговорок и при каждом переезде", "lead": "Ежегодная проверка была и в ТР ЕАЭС 038/2016, но 343-ФЗ закрывает лазейки и жёстко бьёт по графикам парков и мобильному бизнесу.", "visual": "st15_flow", "points": [{"badge": "Стационарные", "text": "На время оценки объект стоит до 21 раб. дня. Получить акт «с замечаниями» и открыться на майские больше нельзя (ст. 15 ч. 5)."}, {"badge": "Мобильные", "text": "Перевезли надувную горку 3,5 м на День города в другой район — обязаны пройти новое освидетельствование до запуска с детьми (ст. 15 ч. 1)."}, {"badge": "Капремонт", "text": "Разрушение критичных узлов (Прил. 5), капремонт или модификация тоже запускают внеплановую проверку с простоем."}], "accent": "red"}, {"num": "04", "total": "08", "tag": "Документы и люди · ст. 14, 17", "title": "Два обязательных журнала, персонал и доступ инвалидов", "lead": "Закон впервые вводит единый стандарт учёта для всех машин и закрепляет подготовку операторов, сохраняя паркам свободу обучения.", "points": [{"badge": "2 журнала", "text": "Журнал ежедневного допуска + Журнал ТОиР по единым федеральным требованиям для всех машин (ст. 14 ч. 4; приказ ещё не вышел)."}, {"badge": "Аттестация", "text": "Операторов нужно обучить (безопасность, нештатные ситуации, доступ инвалидов) и аттестовать с отметкой в журнале допуска (ст. 17 ч. 2, 4)."}, {"badge": "Хорошая новость", "text": "Формы обучения и аттестацию эксплуатант вправе проводить сам — если эксплуатационная документация не требует особой квалификации (ст. 17 ч. 1–3)."}, {"badge": "Доступность", "text": "Закреплена обязанность обеспечивать доступ инвалидов туда, где воздействия для них допустимы (ст. 14 ч. 2)."}], "accent": "teal"}, {"num": "05", "total": "08", "tag": "Надзор и риски · ст. 18–19", "title": "Три причины, по которым аттракцион остановят сразу", "lead": "Региональный контроль идёт по 248-ФЗ. При любом из 3 нарушений Гостехнадзор выносит решение о запрете эксплуатации.", "visual": "ban_triggers", "points": [{"badge": "Перекрыть доступ", "text": "После запрета эксплуатант обязан физически преградить несанкционированный доступ людей к аттракциону (ст. 18 ч. 9)."}, {"badge": "Ответственность", "text": "Отсылка к административной (в т.ч. ст. 14.43 КоАП РФ), уголовной (ст. 238 УК РФ при угрозе/вреде) и иной ответственности (ст. 19)."}], "accent": "red"}, {"num": "06", "total": "08", "tag": "По 4 ролям", "title": "Что делать до 1 марта 2027: короткий чек-лист по ролям", "lead": "В интерактивном гайде для каждой из 4 ролей собран отдельный режим со схемой, примерами и чек-листом.", "layout": "grid2", "points": [{"badge": "1. Директор парка", "badgeTone": "blue", "text": "Заложить окно до 21 р.д. + буфер ремонта до старта сезона; объединить продление ресурса с ежегодной проверкой (ст. 15–16); сверить РИС."}, {"badge": "2. Мобильные / ИП", "badgeTone": "red", "text": "Уйти от самозанятости к ИП/ООО (ст. 9 ч. 6); отделить RB-4 (≤ 0,4 м); пересчитать экономику переездов с учётом ст. 15 ч. 1."}, {"badge": "3. Техдиректор / юрист", "badgeTone": "amber", "text": "Сверить формуляры Прил. 5 (RB-1/2) и паспорта Прил. 6 (RB-3); наладить внутреннюю аттестацию и мониторить приказ по 2 журналам."}, {"badge": "4. Поставщик / ТО", "badgeTone": "teal", "text": "Подрядчики ТОиР отвечают по ст. 14 ч. 6 напрямую; капремонт и модификация запускают освидетельствование до 21 р.д."}], "accent": "blue"}, {"num": "07", "total": "08", "tag": "Мифы и экономия", "title": "3 дорогих мифа о 343-ФЗ и 2 законных способа сэкономить", "lead": "Не верьте пересказам в чатах — проверяйте по статьям закона.", "layout": "myths_split", "myths": [{"badge": "Миф 1 · до 2018", "text": "«Старые аттракционы не под законом» → НЕТ, они прямо в ст. 15 ч. 1 п. 1 и ст. 18 ч. 3 п. 3."}, {"badge": "Миф 2 · регионы", "text": "«Закон отменил местные правила» → НЕТ, ст. 4 и ст. 8 сохраняют НПА субъектов РФ и региональные положения."}, {"badge": "Миф 3 · списание", "text": "«Вышел срок службы = в утиль» → НЕТ, ст. 16 позволяет продлевать до +1 года каждый раз после обследования."}], "savings": [{"badge": "Экономия #1 · ст. 17", "text": "Обучать и аттестовать операторов можно своими силами (если эксплуатационная документация не требует иного)."}, {"badge": "Экономия #2 · ст. 16 ч. 3", "text": "Оценку остаточного ресурса можно совместить с ежегодным освидетельствованием — без второго простоя до 21 раб. дня."}], "points": [], "accent": "amber"}, {"num": "08", "total": "08", "tag": "Радар к 01.03.2027 + гайд", "title": "Чего ещё нет в законе — и где открыть интерактивный разбор", "lead": "На 22.11.2026 (проверено по publication.pravo.gov.ru и КонсультантПлюс) три ключевых подзаконных акта ещё не приняты:", "visual": "radar_cta", "points": [{"badge": "Ждём #1", "text": "Федеральный акт о 2 журналах для всех машин (ст. 14 ч. 4). Пока формы Прил. 1 и 2 ПП № 1732 действуют только для машин до 18.04.2018."}, {"badge": "Ждём #2", "text": "Новая редакция Правил госрегистрации вместо ПП № 1939 (ред. от 10.07.2025)."}, {"badge": "Ждём #3", "text": "Общие требования Правительства к контролю (ст. 18 ч. 5) и обновлённые региональные положения."}], "accent": "blue"}]};
+const YM_ID = 114499063;
+
+function trackGoal(goal, params) {
+  try {
+    if (typeof window.ym === 'function') {
+      window.ym(YM_ID, 'reachGoal', goal, params || {});
+    }
+  } catch (e) {}
+}
+
+function copyText(text, onDone) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(onDone).catch(() => fallbackCopy(text, onDone));
+  } else {
+    fallbackCopy(text, onDone);
+  }
+}
+function fallbackCopy(text, onDone) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+  onDone();
+}
+
+// Fixed federal non-working holidays under Art. 112 of the Russian Labor Code (MM-DD)
+const RF_FIXED_HOLIDAYS = new Set([
+  '01-01','01-02','01-03','01-04','01-05','01-06','01-07','01-08',
+  '02-23','03-08','05-01','05-09','06-12','11-04'
+]);
+
+function isWorkingDayRF(d) {
+  const dow = d.getDay();
+  if (dow === 0 || dow === 6) return false;
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return !RF_FIXED_HOLIDAYS.has(`${mm}-${dd}`);
+}
+
+function subtractWorkingDays(isoDate, count) {
+  const parts = isoDate.split('-').map(Number);
+  if (parts.length !== 3 || parts.some(isNaN)) return null;
+  const d = new Date(parts[0], parts[1] - 1, parts[2]);
+  let left = count;
+  while (left > 0) {
+    d.setDate(d.getDate() - 1);
+    if (isWorkingDayRF(d)) left--;
+  }
+  return d;
+}
+
+function formatDateRu(d) {
+  const months = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+  return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+function pluralWorkDays(n) {
+  const mod10 = n % 10;
+  const mod100 = n % 100;
+  if (mod10 === 1 && mod100 !== 11) return `${n} раб. день`;
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${n} раб. дня`;
+  return `${n} раб. дней`;
+}
+
+const ARROW_SVG = '<div class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M3 10h13m-5-5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>';
+
+function roleDiagramHtml(roleId) {
+  const configs = {
+    park: {
+      title: 'Как пройти 21 рабочий день освидетельствования без потери высокого сезона (ст. 15–16)',
+      arrows: true,
+      steps: [
+        { tone: 'blue', head: '1. Январь–февраль', body: 'Бронь аккредитованной лаборатории и сверка записей в РИС.' },
+        { tone: 'amber', head: '2. Март (до 21 р.д.)', body: 'Простой на освидетельствование + совмещённое продление ресурса (ст. 16 ч. 3).' },
+        { tone: 'red', head: '3. Буфер ремонта', body: 'Условные акты запрещены (ч. 5): запас времени на устранение замечаний.' },
+        { tone: 'teal', head: '4. Открытие сезона', body: 'Чистый акт на 12 мес., два журнала и отметка аттестации персонала.' }
+      ],
+      cap: 'Схема иллюстрирует планирование сроков по ст. 15 ч. 2–5 и ст. 16 ч. 3–5 343-ФЗ (месяцы приведены как пример для сезонного парка).'
+    },
+    mobile: {
+      title: 'Цикл каждого переезда мобильного аттракциона RB-1..RB-3 (ст. 9, ст. 14 ч. 7, ст. 15 ч. 1)',
+      arrows: true,
+      steps: [
+        { tone: 'blue', head: '1. Статус и риск', body: 'Только ЮЛ или ИП (ст. 9 ч. 6); проверьте высоту (H > 0,4 м).' },
+        { tone: 'amber', head: '2. Монтаж на точке', body: 'Обязательная своя полная проверка после разборки (ст. 14 ч. 7).' },
+        { tone: 'red', head: '3. НОВОЕ освидетельствование', body: 'Аккредитованная лаборатория при каждой смене места установки (ст. 15 ч. 1).' },
+        { tone: 'teal', head: '4. Временная регистрация', body: 'Запись в РИС субъекта по месту пребывания → только потом запуск.' }
+      ],
+      cap: 'Исключение: надувные батуты и мини-карусели с H ≤ 0,4 м и V ≤ 3 м/с (RB-4 по Прил. 2 ТР ЕАЭС) под 343-ФЗ не попадают.'
+    },
+    tech: {
+      title: 'Как стыкуются 4 нормативных слоя и что проверяет Гостехнадзор по 248-ФЗ',
+      arrows: false,
+      steps: [
+        { tone: 'blue', head: 'ТР ЕАЭС 038/2016', body: 'Прил. 1 (виды), Прил. 2 (RB), Прил. 5–6 (формуляр/паспорт), п. 130 (ежегодное освид.).' },
+        { tone: 'dark', head: '343-ФЗ (с 01.03.2027)', body: 'Единые 2 журнала, переезды и простой 21 р.д. (ст. 15), персонал (ст. 17), запрет (ст. 18).' },
+        { tone: 'amber', head: 'ПП № 1939 и № 1732', body: 'Регистрация в РИС (№ 1939) и эксплуатация машин до 18.04.2018 (№ 1732, Прил. 1 и 2).' },
+        { tone: 'teal', head: 'Регион + 248-ФЗ', body: 'Положение субъекта РФ о региональном госконтроле и регламент работы РИС.' }
+      ],
+      cap: 'Ст. 4 и ст. 18 ч. 2–3 343-ФЗ: инспектор проверяет одновременно ТР ЕАЭС 038/2016, 343-ФЗ, ПП № 1732 (для машин до 2018 г.) и правила регистрации.'
+    },
+    vendor: {
+      title: 'Зона ответственности производителя, поставщика и подрядчика ТО (ст. 12–15, ст. 17 ч. 1)',
+      arrows: true,
+      steps: [
+        { tone: 'blue', head: 'ст. 12 · Производство', body: 'Проектирование, изготовление и монтаж по требованиям ТР ЕАЭС 038/2016.' },
+        { tone: 'teal', head: 'ст. 13 · Выпуск в РФ', body: 'Сертификат (RB-1) или декларация (RB-2, RB-3) + формуляр Прил. 5 / паспорт Прил. 6.' },
+        { tone: 'amber', head: 'ст. 14 ч. 5–6 · ТОиР', body: 'Сторонний подрядчик ЮЛ/ИП прямо обязан соблюдать нормы РФ и руководство изготовителя.' },
+        { tone: 'red', head: 'ст. 15 ч. 1 п. 4 · Капремонт', body: 'Капремонт или модификация запускают аккредитованное освидетельствование (до 21 р.д.).' }
+      ],
+      cap: 'Эксплуатационная документация изготовителя также задаёт требования к квалификации операторов (ст. 17 ч. 1) и перечень критичных узлов (Прил. 5).'
+    }
+  };
+  const cfg = configs[roleId] || configs.park;
+  const cells = [];
+  cfg.steps.forEach((s, i) => {
+    cells.push(`<div class="flow-step tone-${s.tone}"><div class="flow-head">${s.head}</div><div class="flow-body">${s.body}</div></div>`);
+    if (cfg.arrows && i < cfg.steps.length - 1) cells.push(ARROW_SVG);
+  });
+  return `<div class="flow-wrap"><p class="flow-title">${cfg.title}</p><div class="flow-grid${cfg.arrows ? '' : ' no-arrows'}">${cells.join('')}</div><p class="flow-cap">${cfg.cap}</p></div>`;
+}
+
+function wireDowntimeCalc() {
+  const dateInp = document.getElementById('openDateInput');
+  const bufChk = document.getElementById('repairBufChk');
+  const outDate = document.getElementById('calcStartDate');
+  const outMeta = document.getElementById('calcMetaText');
+  const copyBtn = document.getElementById('copyCalcBtn');
+  if (!dateInp || !outDate) return;
+
+  let lastSummary = '';
+  function updateCalc() {
+    const days = 21 + (bufChk.checked ? 10 : 0);
+    const start = subtractWorkingDays(dateInp.value, days);
+    const openParts = dateInp.value.split('-').map(Number);
+    const openObj = new Date(openParts[0], openParts[1] - 1, openParts[2]);
+    if (!start) return;
+    const startRu = formatDateRu(start);
+    const openRu = formatDateRu(openObj);
+    const daysLabel = pluralWorkDays(days);
+    outDate.textContent = `Остановить аттракцион не позже ${startRu}`;
+    outMeta.textContent = `Заложен ${daysLabel} до открытия ${openRu} (21 р.д. проверки${bufChk.checked ? ' + 10 р.д. буфера на замечания' : ''}).`;
+    lastSummary = `График освидетельствования по ст. 15 343-ФЗ: целевое открытие — ${openRu}. Остановить аттракцион и запустить лабораторию не позже ${startRu} (заложен ${daysLabel}: 21 р.д. предельный срок акта${bufChk.checked ? ' + 10 р.д. буфера ремонта, т.к. условные акты запрещены ч. 5' : ''}). Подробнее: ${GUIDE_DATA.meta.guideUrl}#downtimeCalc (${GUIDE_DATA.meta.channelHandle})`;
+  }
+
+  dateInp.addEventListener('change', () => { updateCalc(); trackGoal('calc_downtime'); });
+  bufChk.addEventListener('change', () => { updateCalc(); trackGoal('calc_downtime'); });
+  copyBtn.addEventListener('click', () => {
+    trackGoal('calc_downtime');
+    copyText(lastSummary, () => {
+      copyBtn.textContent = 'Скопировано';
+      setTimeout(() => { copyBtn.textContent = 'Скопировать график инженеру'; }, 1800);
+    });
+  });
+  updateCalc();
+}
+
+function renderRole(roleId, pushUrl) {
+  const role = GUIDE_DATA.roles.find(r => r.id === roleId) || GUIDE_DATA.roles[0];
+  document.querySelectorAll('.role-tab').forEach(btn => {
+    const on = btn.dataset.role === role.id;
+    btn.classList.toggle('is-active', on);
+    btn.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
+
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem('fz343_chk') || '{}'); } catch (e) {}
+
+  const thesesHtml = role.theses.map(t => `
+    <div class="thesis-item">
+      <h3>${t.title}</h3>
+      <p>${t.text}</p>
+      <div class="tags-row">${t.articles.map(a => `<span class="art-tag">${a}</span>`).join('')}</div>
+    </div>
+  `).join('');
+
+  const examplesHtml = role.examples.map(ex => `
+    <div class="example-box">
+      <h4>${ex.title}</h4>
+      <p><strong>Ситуация:</strong> ${ex.situation}</p>
+      <p><strong>Что делать:</strong> ${ex.action}</p>
+    </div>
+  `).join('');
+
+  const chkHtml = role.checklist.map(c => {
+    const checked = !!saved[c.id];
+    return `<label class="chk-item${checked ? ' is-done' : ''}">
+      <input type="checkbox" data-chk="${c.id}" ${checked ? 'checked' : ''}>
+      <span class="chk-text">${c.text}</span>
+      <span class="art-tag">${c.article}</span>
+    </label>`;
+  }).join('');
+
+  const artHtml = role.articlesRef.map(a => `
+    <li><span class="art-tag">${a.code}</span><span>${a.note}</span></li>
+  `).join('');
+
+  const panel = document.getElementById('rolePanel');
+  panel.innerHTML = `
+    <p class="role-summary">${role.summary}</p>
+    ${roleDiagramHtml(role.id)}
+    <div class="theses-list">${thesesHtml}</div>
+    <div class="subhead-row">
+      <span class="subhead">Живые примеры из практики</span>
+      <a class="btn btn-sm" href="#downtimeCalc">Калькулятор простоя 21 р.д. ↓</a>
+    </div>
+    <div class="examples-grid">${examplesHtml}</div>
+    <div class="subhead-row">
+      <span class="subhead">Чек-лист действий до 01.03.2027 (отмечается прямо на телефоне)</span>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <button type="button" class="btn btn-sm chk-copy-btn" id="copyChecklistBtn">Скопировать чек-лист</button>
+        <button type="button" class="btn btn-sm chk-copy-btn" id="rolePrintBtn">Печать / PDF</button>
+      </div>
+    </div>
+    <div class="checklist">${chkHtml}</div>
+    <details class="articles-drawer">
+      <summary><span>Точные статьи 343-ФЗ для роли «${role.shortTitle}»</span><span class="art-tag">${role.articlesRef.length} блоков</span></summary>
+      <ul class="art-list">${artHtml}</ul>
+    </details>
+  `;
+
+  const rolePrintBtn = document.getElementById('rolePrintBtn');
+  if (rolePrintBtn) {
+    rolePrintBtn.addEventListener('click', () => {
+      trackGoal('print_pdf', { source: 'role_panel', role: role.id });
+      window.print();
+    });
+  }
+
+  panel.querySelectorAll('input[data-chk]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      cb.closest('.chk-item').classList.toggle('is-done', cb.checked);
+      try {
+        const cur = JSON.parse(localStorage.getItem('fz343_chk') || '{}');
+        cur[cb.dataset.chk] = cb.checked;
+        localStorage.setItem('fz343_chk', JSON.stringify(cur));
+      } catch (e) {}
+    });
+  });
+
+  const copyChkBtn = document.getElementById('copyChecklistBtn');
+  if (copyChkBtn) {
+    copyChkBtn.addEventListener('click', () => {
+      let cur = {};
+      try { cur = JSON.parse(localStorage.getItem('fz343_chk') || '{}'); } catch (e) {}
+      const lines = [
+        `Чек-лист по 343-ФЗ до 01.03.2027 — ${role.shortTitle} (${role.subtitle}):`,
+        ...role.checklist.map(c => `${cur[c.id] ? '[x]' : '[ ]'} ${c.text} (${c.article})`),
+        `Интерактивный разбор: ${GUIDE_DATA.meta.guideUrl}?role=${role.id} (${GUIDE_DATA.meta.channelHandle})`
+      ];
+      trackGoal('copy_checklist', { role: role.id });
+      copyText(lines.join('\n'), () => {
+        copyChkBtn.textContent = 'Чек-лист скопирован';
+        setTimeout(() => { copyChkBtn.textContent = 'Скопировать чек-лист'; }, 1800);
+      });
+    });
+  }
+
+  if (pushUrl) {
+    trackGoal('role_switch', { role: role.id });
+    if (history.replaceState) {
+      const u = new URL(window.location.href);
+      u.searchParams.set('role', role.id);
+      history.replaceState(null, '', u.toString());
+    }
+  }
+}
+
+document.querySelectorAll('.role-tab').forEach(btn => {
+  btn.addEventListener('click', () => renderRole(btn.dataset.role, true));
+});
+
+// Interactive Applicability Checker with seat-tilt thresholds (Annex 2 TR EAEU 038/2016)
+const state = { kind: 'in_list', risk: 'rb2', tilt: 'none', usage: 'park' };
+const RISK_ORDER = { rb4: 0, rb3: 1, rb2: 2, rb1: 3 };
+const RISK_LABEL = { rb4: 'RB-4', rb3: 'RB-3', rb2: 'RB-2', rb1: 'RB-1' };
+
+function effectiveRisk() {
+  if (state.tilt === 'none') return state.risk;
+  return RISK_ORDER[state.tilt] > RISK_ORDER[state.risk] ? state.tilt : state.risk;
+}
+
+function computeVerdict(fromUserClick) {
+  const riskGroup = document.getElementById('qRiskGroup');
+  const tiltGroup = document.getElementById('qTiltGroup');
+  const modeGroup = document.getElementById('qModeGroup');
+  const excluded = state.kind !== 'in_list';
+  const effRisk = effectiveRisk();
+
+  riskGroup.style.display = excluded ? 'none' : 'block';
+  tiltGroup.style.display = excluded ? 'none' : 'block';
+  modeGroup.style.display = (excluded || effRisk === 'rb4') ? 'none' : 'block';
+
+  let tone = 'amber';
+  let title = '';
+  let basis = '';
+  let actions = [];
+  let targetRole = state.usage === 'mobile' ? 'mobile' : (state.usage === 'vendor' ? 'vendor' : 'park');
+  let shareSummary = '';
+
+  if (state.kind === 'outside_list') {
+    tone = 'teal';
+    title = 'Предварительно: ВНЕ действия 343-ФЗ (нет в Приложении 1 ТР ЕАЭС)';
+    basis = 'ст. 2 ч. 2 343-ФЗ · Приложение 1 ТР ЕАЭС 038/2016';
+    actions = [
+      'Сверьте паспорт изделия: если это тир, силомер, лазертаг, скалодром или верёвочный парк без элементов из 8 видов Приложения 1 — 343-ФЗ не применяется.',
+      'Сохраняются общие нормы безопасности услуг, профильные ГОСТы (например, на верёвочные парки) и закон о защите прав потребителей.',
+      'Если внутри зоны есть механизированный спуск, тарзанка или надувной батут выше 0,4 м — проверяйте этот элемент отдельно.'
+    ];
+    targetRole = 'tech';
+    shareSummary = 'Проверил объект по 343-ФЗ: тиры/верёвочные парки вне Приложения 1 ТР ЕАЭС 038/2016 не подпадают под 343-ФЗ (ст. 2 ч. 2).';
+  } else if (state.kind === 'playground') {
+    tone = 'teal';
+    title = 'Предварительно: ВНЕ действия 343-ФЗ (детская площадка / спорт)';
+    basis = 'ст. 2 ч. 2 343-ФЗ';
+    actions = [
+      'Оборудование для детских игровых площадок и спортивно-тренировочное оборудование прямо исключены из 343-ФЗ.',
+      'Для детских площадок действует отдельный техрегламент ТР ЕАЭС 042/2017, а не 343-ФЗ.',
+      'Убедитесь, что в паспорте оборудование классифицировано именно как площадка/спорт, а не аттракцион.'
+    ];
+    targetRole = 'tech';
+    shareSummary = 'Проверил объект по 343-ФЗ: детские игровые площадки и спортоборудование прямо исключены ч. 2 ст. 2.';
+  } else if (state.kind === 'opo_personal') {
+    tone = 'teal';
+    title = 'Предварительно: ВНЕ действия 343-ФЗ (ОПО или личные нужды)';
+    basis = 'ст. 2 ч. 2 343-ФЗ';
+    actions = [
+      'Канатные дороги и фуникулёры, относящиеся к опасным производственным объектам (ОПО), регулируются законодательством о промбезопасности.',
+      'Оборудование исключительно для личных и семейных нужд (без оказания развлекательных услуг) под 343-ФЗ не подпадает.'
+    ];
+    targetRole = 'tech';
+    shareSummary = 'Проверил объект по 343-ФЗ: канатные дороги-ОПО и оборудование для личных/семейных нужд исключены ч. 2 ст. 2.';
+  } else if (effRisk === 'rb4') {
+    tone = 'teal';
+    title = 'Предварительно: ВНЕ действия 343-ФЗ (ничтожный риск RB-4)';
+    basis = 'ст. 2 ч. 2 343-ФЗ · Приложение 2 ТР ЕАЭС 038/2016';
+    actions = [
+      'Аттракционы со степенью риска RB-4 (H ≤ 0,4 м, V ≤ 3 м/с и без опасных углов наклона кресел) прямо исключены из 343-ФЗ.',
+      'Обязательно сверьте степень риска RB-4 в паспорте изготовителя и держите копию на точке для проверяющих.',
+      'Если хотя бы одна горка, площадка выше 0,4 м или есть наклон кресел сверх нормы — объект переходит в RB-3..RB-1 и подпадает под закон.'
+    ];
+    targetRole = 'mobile';
+    shareSummary = 'Проверил объект по 343-ФЗ: аттракционы RB-4 (H ≤ 0,4 м, V ≤ 3 м/с, без опасного наклона кресел) не подпадают под 343-ФЗ (ч. 2 ст. 2).';
+  } else {
+    const riskLabel = RISK_LABEL[effRisk];
+    const certPhrase = effRisk === 'rb1'
+      ? 'обязателен сертификат соответствия (RB-1)'
+      : `обязательна декларация соответствия (${riskLabel})`;
+    const certShort = effRisk === 'rb1' ? 'сертификат (RB-1)' : `декларация (${riskLabel})`;
+    const docPhrase = effRisk === 'rb3'
+      ? 'паспорт аттракциона по Прил. 6 ТР ЕАЭС 038/2016'
+      : 'формуляр по Прил. 5 ТР ЕАЭС 038/2016 (вкл. перечень критичных компонентов)';
+    const tiltNote = state.tilt !== 'none' && RISK_ORDER[state.tilt] > RISK_ORDER[state.risk]
+      ? ' (повышено по углу наклона кресел — Прил. 2 ТР ЕАЭС)'
+      : '';
+
+    tone = effRisk === 'rb1' || state.usage === 'mobile' ? 'red' : (effRisk === 'rb2' ? 'amber' : 'blue');
+    if (state.usage === 'mobile') {
+      title = `Подпадает под 343-ФЗ (${riskLabel}, мобильный)${tiltNote} — критична ст. 15`;
+      basis = `ст. 2 ч. 1, ст. 9 ч. 6, ст. 15 ч. 1 343-ФЗ · ${certShort}`;
+      actions = [
+        `Эксплуатант — только ЮЛ или ИП (ст. 9 ч. 6); при выпуске после 18.04.2018 ${certPhrase} и ${docPhrase}.`,
+        'Обязательно аккредитованное освидетельствование раз в 12 мес. И ПРИ КАЖДОЙ смене места установки (ст. 15 ч. 1), на время проверки объект стоит (до 21 р.д.).',
+        'После каждого монтажа/разборки — своя полная проверка (ст. 14 ч. 7), временная регистрация в РИС, 2 журнала (ст. 14 ч. 4) и аттестация операторов (ст. 17).'
+      ];
+      shareSummary = `Проверил мобильный объект (${riskLabel}) по 343-ФЗ: подпадает полностью. С 01.03.2027 — только ЮЛ/ИП (ст. 9 ч. 6) и новое аккредитованное освидетельствование при каждом переезде (ст. 15 ч. 1).`;
+    } else if (state.usage === 'vendor') {
+      title = `Подпадает под 343-ФЗ (${riskLabel}, поставка / подрядное ТО)${tiltNote}`;
+      basis = `ст. 12–13, ст. 14 ч. 5–6, ст. 15 ч. 1 п. 4 343-ФЗ · ${certShort}`;
+      actions = [
+        `При выпуске в обращение (для аттракционов после 18.04.2018) ${certPhrase} (ст. 13) и ${docPhrase}.`,
+        'Сторонний подрядчик (ЮЛ/ИП) по ТОиР прямо обязан соблюдать нормы РФ и руководство изготовителя (ст. 14 ч. 5–6).',
+        'Капремонт или модификация запускают обязательное аккредитованное освидетельствование с простоем до 21 р.д. (ст. 15 ч. 1 п. 4).'
+      ];
+      shareSummary = `Проверил объект (${riskLabel}) по 343-ФЗ для поставщика/подрядчика ТО: ст. 12–13 (${certShort}), прямая ответственность подрядчика ТОиР по ст. 14 ч. 6, капремонт требует освидетельствования (ст. 15).`;
+    } else {
+      title = `Подпадает под 343-ФЗ (${riskLabel}, стационарный парк)${tiltNote}`;
+      basis = `ст. 2 ч. 1, ст. 9, ст. 14–18 343-ФЗ · ${certShort}`;
+      actions = [
+        `Нужен ${docPhrase} (для машин после 18.04.2018 также ${certPhrase}) и актуальная запись о регистрации в РИС.`,
+        'Ежегодное аккредитованное освидетельствование с 01.03.2027 проходит с обязательной остановкой до 21 р.д. и без условных актов «с замечаниями» (ст. 15 ч. 2–5).',
+        'Если истекает срок службы — совместите оценку остаточного ресурса с ежегодным освидетельствованием (ст. 16 ч. 3); ведите 2 журнала (ст. 14 ч. 4) и аттестацию операторов (ст. 17).'
+      ];
+      shareSummary = `Проверил объект (${riskLabel}) стационарного парка по 343-ФЗ: простой до 21 р.д. на освидетельствовании и запрет условных актов (ст. 15), 2 журнала и аттестация персонала (ст. 14, 17).`;
+    }
+    if (state.risk === 'rb2' && state.tilt !== 'none' && effRisk !== 'rb1') {
+      actions.push('Внимание по наклону кресел: если наклон происходит на высоте подъёма H ≥ 3 м, по Приложению 2 ТР ЕАЭС 038/2016 аттракцион относится к RB-1 (требуется сертификат соответствия) — сверьте по формуляру.');
+    }
+  }
+
+  if (fromUserClick) {
+    trackGoal('checker_verdict', { kind: state.kind, risk: effRisk, usage: state.usage });
+  }
+
+  const shareUrl = `${GUIDE_DATA.meta.guideUrl}?role=${targetRole}`;
+  const shareText = `${shareSummary} Подробный разбор по ролям (${GUIDE_DATA.meta.channelHandle}):`;
+  const tgHref = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+  const box = document.getElementById('verdictBox');
+  box.className = `verdict-box tone-${tone}`;
+  box.innerHTML = `
+    <div class="verdict-top">
+      <h3 class="verdict-title">${title}</h3>
+      <span class="art-tag">${basis}</span>
+    </div>
+    <ul class="verdict-list">${actions.map(a => `<li>${a}</li>`).join('')}</ul>
+    <div class="verdict-actions">
+      <button type="button" class="btn btn-primary" id="jumpRoleBtn">Открыть режим для этой роли →</button>
+      <a class="btn btn-teal" href="${tgHref}" target="_blank" rel="noopener" id="shareTgBtn">Поделиться итогом в Telegram</a>
+      <button type="button" class="btn" id="copyVerdictBtn">Скопировать для чата</button>
+    </div>
+    <p class="verdict-note">Предварительная оценка по ст. 2 343-ФЗ и ТР ЕАЭС 038/2016 — всегда сверяйте степень биомеханического риска по паспорту или формуляру изготовителя.</p>
+  `;
+
+  document.getElementById('jumpRoleBtn').addEventListener('click', () => {
+    renderRole(targetRole, true);
+    document.getElementById('roles').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('shareTgBtn').addEventListener('click', () => {
+    trackGoal('share_telegram', { role: targetRole });
+  });
+  document.getElementById('copyVerdictBtn').addEventListener('click', (e) => {
+    trackGoal('copy_verdict', { role: targetRole });
+    const full = `${shareText} ${shareUrl}`;
+    copyText(full, () => {
+      e.target.textContent = 'Скопировано';
+      setTimeout(() => { e.target.textContent = 'Скопировать для чата'; }, 1800);
+    });
+  });
+}
+
+document.querySelectorAll('.choice-grid').forEach(group => {
+  const key = group.dataset.q;
+  group.querySelectorAll('.choice-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      group.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('is-selected'));
+      btn.classList.add('is-selected');
+      state[key] = btn.dataset.val;
+      computeVerdict(true);
+    });
+  });
+});
+
+// Open all article drawers automatically during print/PDF export
+let prevDrawerStates = [];
+window.addEventListener('beforeprint', () => {
+  prevDrawerStates = [];
+  document.querySelectorAll('details.articles-drawer').forEach(d => {
+    prevDrawerStates.push([d, d.open]);
+    d.open = true;
+  });
+});
+window.addEventListener('afterprint', () => {
+  prevDrawerStates.forEach(([d, wasOpen]) => { d.open = wasOpen; });
+});
+
+document.getElementById('printPdfBtn').addEventListener('click', () => {
+  trackGoal('print_pdf', { source: 'topbar' });
+  window.print();
+});
+const footerPrintBtn = document.getElementById('footerPrintBtn');
+if (footerPrintBtn) {
+  footerPrintBtn.addEventListener('click', () => {
+    trackGoal('print_pdf', { source: 'footer' });
+    window.print();
+  });
+}
+
+document.querySelectorAll('[data-goal="click_channel"]').forEach(el => {
+  el.addEventListener('click', () => trackGoal('click_channel'));
+});
+
+// Init from URL ?role=
+const params = new URLSearchParams(window.location.search);
+const initialRole = params.get('role') || 'park';
+wireDowntimeCalc();
+renderRole(initialRole, false);
+computeVerdict(false);
+</script>
+</body>
+</html>
